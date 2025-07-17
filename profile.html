@@ -1,0 +1,1445 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Profile - Streamer Tips</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Nunito:ital,wght@0,200..1000;1,200..1000&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="assets/css/styles.css">
+    <link rel="stylesheet" href="assets/css/core-components.css">
+    <link rel="stylesheet" href="assets/css/profile.css">
+</head>
+
+<body>
+    <!-- Header -->
+    <header>
+        <div class="header-content">
+            <a href="index.html" class="logo">Streamer Tips</a>
+            <div class="search-container">
+                <input type="text" class="search-input" placeholder="Search tools, guides, tutorials...">
+                <svg class="search-icon" xmlns="http://www.w3.org/2000/svg" width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+                    <circle cx="11" cy="11" r="8"></circle>
+                    <line x1="21" y1="21" x2="16.65" y2="16.65"></line>
+                </svg>
+            </div>
+            <div class="header-right">
+                <a href="#" class="profile-button active" aria-label="Profile">
+                    <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+                        <path d="M20 21v-2a4 4 0 0 0-4-4H8a4 4 0 0 0-4 4v2"></path>
+                        <circle cx="12" cy="7" r="4"></circle>
+                    </svg>
+                </a>
+            </div>
+        </div>
+    </header>
+
+    <!-- Sidebar -->
+    <nav class="sidebar">
+        <div class="sidebar-nav">
+            <a href="index.html">
+                <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+                    <path d="M3 9l9-7 9 7v11a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2z"></path>
+                    <polyline points="9 22 9 12 15 12 15 22"></polyline>
+                </svg>
+                Home
+            </a>
+            <a href="creator-tools.html">
+                <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+                    <rect x="3" y="3" width="7" height="7"></rect>
+                    <rect x="14" y="3" width="7" height="7"></rect>
+                    <rect x="14" y="14" width="7" height="7"></rect>
+                    <rect x="3" y="14" width="7" height="7"></rect>
+                </svg>
+                Creator Tools
+            </a>
+            <a href="streamer-academy.html">
+                <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+                    <path d="M2 3h6a4 4 0 0 1 4 4v14a3 3 0 0 0-3-3H2z"></path>
+                    <path d="M22 3h-6a4 4 0 0 0-4 4v14a3 3 0 0 1 3-3h7z"></path>
+                </svg>
+                Academy
+            </a>
+            <a href="peripherals.html">
+                <svg fill="none" height="24" stroke="currentColor" stroke-linecap="round" stroke-linejoin="round"
+                    stroke-width="2" viewbox="0 0 24 24" width="24" xmlns="http://www.w3.org/2000/svg">
+                    <path d="M12 2v4M12 18v4M4.93 4.93l2.83 2.83M16.24 16.24l2.83 2.83M2 12h4M18 12h4M4.93 19.07l2.83-2.83M16.24 7.76l2.83-2.83"></path>
+                </svg>
+                Peripherals
+            </a>
+            <a href="streamer-academy.html">
+                <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+                    <circle cx="12" cy="12" r="10"></circle>
+                    <polygon points="10 8 16 12 10 16 10 8"></polygon>
+                </svg>
+                Live Events
+            </a>
+            <a href="profile.html" class="active">
+                <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+                    <path d="M20 21v-2a4 4 0 0 0-4-4H8a4 4 0 0 0-4 4v2"></path>
+                    <circle cx="12" cy="7" r="4"></circle>
+                </svg>
+                Profile
+            </a>
+            <div class="settings-dropdown">
+                <a href="#" class="settings-trigger">
+                    <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+                        <circle cx="12" cy="12" r="3"></circle>
+                        <path d="M19.4 15a1.65 1.65 0 0 0 .33 1.82l.06.06a2 2 0 0 1 0 2.83 2 2 0 0 1-2.83 0l-.06-.06a1.65 1.65 0 0 0-1.82-.33 1.65 1.65 0 0 0-1 1.51V21a2 2 0 0 1-2 2 2 2 0 0 1-2-2v-.09A1.65 1.65 0 0 0 9 19.4a1.65 1.65 0 0 0-1.82.33l-.06.06a2 2 0 0 1-2.83 0 2 2 0 0 1 0-2.83l.06-.06a1.65 1.65 0 0 0 .33-1.82 1.65 1.65 0 0 0-1.51-1H3a2 2 0 0 1-2-2 2 2 0 0 1 2-2h.09A1.65 1.65 0 0 0 4.6 9a1.65 1.65 0 0 0-.33-1.82l-.06-.06a2 2 0 0 1 0-2.83 2 2 0 0 1 2.83 0l.06.06a1.65 1.65 0 0 0 1.82.33H9a1.65 1.65 0 0 0 1-1.51V3a2 2 0 0 1 2-2 2 2 0 0 1 2 2v.09a1.65 1.65 0 0 0 1 1.51 1.65 1.65 0 0 0 1.82-.33l.06-.06a2 2 0 0 1 2.83 0 2 2 0 0 1 0 2.83l-.06.06a1.65 1.65 0 0 0-.33 1.82V9a1.65 1.65 0 0 0 1.51 1H21a2 2 0 0 1 2 2 2 2 0 0 1-2 2h-.09a1.65 1.65 0 0 0-1.51 1z"></path>
+                    </svg>
+                    More
+                </a>
+                <div class="settings-menu">
+                    <a href="#" class="settings-item">English (US)</a>
+                    <a href="#" class="settings-item">Settings</a>
+                    <a href="#" class="settings-item">Feedback and help</a>
+                    <a href="#" class="settings-item logout">Log out</a>
+                </div>
+            </div>
+        </div>
+    </nav>
+
+    <!-- Sidebar Toggle -->
+    <!-- <button class="sidebar-toggle" aria-label="Toggle Sidebar">
+        <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+            <path d="M15 18l-6-6 6-6"/>
+        </svg>
+    </button> -->
+
+    <!-- Main Content -->
+    <main>
+        <div class="profile-container">
+            <div class="profile-header">
+                <div class="profile-header-top">
+                    <div class="profile-avatar">
+                        <span>J</span>
+                    </div>
+                    <div class="profile-info">
+                        <h1 class="profile-name">John Doe</h1>
+                        <div class="profile-username">@johndoe</div>
+                        <p class="profile-bio">Passionate streamer and content creator. Love gaming and connecting with my community!</p>
+                        <div class="profile-stats">
+                            <div class="profile-stat">
+                                <div class="profile-stat-value" id="posts-count">0</div>
+                                <div class="profile-stat-label">Posts</div>
+                            </div>
+                            <div class="profile-stat">
+                                <div class="profile-stat-value" id="followers-count">0</div>
+                                <div class="profile-stat-label">Followers</div>
+                            </div>
+                            <div class="profile-stat">
+                                <div class="profile-stat-value" id="following-count">0</div>
+                                <div class="profile-stat-label">Following</div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="profile-links">
+                    <a href="#" class="profile-link" data-section="edit-profile">
+                        <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+                            <path d="M12 20h9"></path>
+                            <path d="M16.5 3.5a2.121 2.121 0 0 1 3 3L7 19l-4 1 1-4L16.5 3.5z"></path>
+                        </svg>
+                        Edit Profile
+                    </a>
+                    <button class="profile-link sync-app-btn" id="syncAppBtn" title="Sync with App">
+                        <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+                            <path d="M21 2v6h-6"></path>
+                            <path d="M3 12a9 9 0 0 1 15-6.7L21 8"></path>
+                            <path d="M3 22v-6h6"></path>
+                            <path d="M21 12a9 9 0 0 1-15 6.7L3 16"></path>
+                        </svg>
+                        Sync App
+                    </button>
+                    <a href="#" class="profile-link" data-section="network">
+                        <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+                            <path d="M17 21v-2a4 4 0 0 0-4-4H5a4 4 0 0 0-4 4v2"></path>
+                            <circle cx="9" cy="7" r="4"></circle>
+                            <path d="M23 21v-2a4 4 0 0 0-3-3.87"></path>
+                            <path d="M16 3.13a4 4 0 0 1 0 7.75"></path>
+                        </svg>
+                        My Network
+                    </a>
+                    <a href="#" class="profile-link" data-section="analytics">
+                        <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+                            <path d="M22 12h-4l-3 9L9 3l-3 9H2"></path>
+                        </svg>
+                        Analytics
+                    </a>
+                    <a href="#" class="profile-link" data-section="messages">
+                        <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+                            <path d="M21 15a2 2 0 0 1-2 2H7l-4 4V5a2 2 0 0 1 2-2h14a2 2 0 0 1 2 2z"></path>
+                        </svg>
+                        Messages
+                    </a>
+                    <a href="#" class="profile-link" data-section="bookmarks">
+                        <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+                            <path d="M19 21l-7-5-7 5V5a2 2 0 0 1 2-2h10a2 2 0 0 1 2 2z"></path>
+                        </svg>
+                        Bookmarks
+                    </a>
+                    <a href="#" class="profile-link" data-section="calendar">
+                        <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+                            <rect x="3" y="4" width="18" height="18" rx="2" ry="2"></rect>
+                            <line x1="16" y1="2" x2="16" y2="6"></line>
+                            <line x1="8" y1="2" x2="8" y2="6"></line>
+                            <line x1="3" y1="10" x2="21" y2="10"></line>
+                        </svg>
+                        Calendar
+                    </a>
+                </div>
+            </div>
+
+            <!-- Content Sections -->
+            <div id="edit-profile-section" class="content-section">
+                <h3 class="section-title">Edit Profile</h3>
+                <form class="edit-profile-form">
+                    <div class="form-group">
+                        <label for="profile-photo">Profile Photo</label>
+                        <div class="profile-photo-upload">
+                            <div class="profile-photo-preview" id="profilePhotoPreview">
+                                <span class="profile-initial">J</span>
+                                <div class="photo-overlay">
+                                    <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+                                        <path d="M23 19a2 2 0 0 1-2 2H3a2 2 0 0 1-2-2V8a2 2 0 0 1 2-2h4l2-3h6l2 3h4a2 2 0 0 1 2 2z"></path>
+                                        <circle cx="12" cy="13" r="4"></circle>
+                                    </svg>
+                                </div>
+                            </div>
+                            <div class="photo-upload-controls">
+                                <label class="upload-button" for="profile-photo">
+                                    <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+                                        <path d="M21 15v4a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2v-4"></path>
+                                        <polyline points="7 10 12 15 17 10"></polyline>
+                                        <line x1="12" y1="15" x2="12" y2="3"></line>
+                                    </svg>
+                                    Choose Photo
+                                </label>
+                                <button type="button" class="remove-photo-btn" id="removePhotoBtn" style="display: none;">
+                                    <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+                                        <path d="M3 6h18"></path>
+                                        <path d="M19 6v14a2 2 0 0 1-2 2H7a2 2 0 0 1-2-2V6"></path>
+                                        <path d="M8 6V4a2 2 0 0 1 2-2h4a2 2 0 0 1 2 2v2"></path>
+                                    </svg>
+                                    Remove
+                                </button>
+                                <input type="file" id="profile-photo" accept="image/*" class="profile-photo-input">
+                            </div>
+                        </div>
+                        <div class="photo-hint">Upload a square image (JPG, PNG, GIF). Max size: 5MB.</div>
+                    </div>
+
+                    <div class="form-group">
+                        <label for="name">Name</label>
+                        <input type="text" id="name" placeholder="Enter your name" required>
+                        <div class="name-hint">Your display name that will be shown to other users.</div>
+                    </div>
+
+                    <div class="form-group">
+                        <label for="username">Username</label>
+                        <input type="text" id="username" placeholder="Enter username" required>
+                        <div class="username-hint">Usernames can only contain letters, numbers, underscores, and periods. Changing your username will also change your profile link.</div>
+                    </div>
+
+                    <div class="form-group">
+                        <label for="social-link">Social Media Link</label>
+                        <input type="url" id="social-link" placeholder="Enter social media link (optional)">
+                    </div>
+
+                    <div class="form-group">
+                        <label for="bio">Bio</label>
+                        <textarea id="bio" placeholder="Tell us about yourself" maxlength="80"></textarea>
+                        <div class="char-count">0/80</div>
+                    </div>
+
+                    <div class="form-actions">
+                        <button type="submit" class="save-button">Save Changes</button>
+                        <button type="button" class="cancel-button">Cancel</button>
+                    </div>
+                </form>
+            </div>
+
+            <div id="network-section" class="content-section">
+                <h3 class="section-title">My Network</h3>
+                
+                <!-- Network Stats -->
+                <div class="network-stats">
+                    <div class="stat-card">
+                        <div class="stat-value">1.2K</div>
+                        <div class="stat-label">Followers</div>
+                    </div>
+                    <div class="stat-card">
+                        <div class="stat-value">500</div>
+                        <div class="stat-label">Following</div>
+                    </div>
+                    <div class="stat-card">
+                        <div class="stat-value">45</div>
+                        <div class="stat-label">Mutual Connections</div>
+                    </div>
+                </div>
+
+                <!-- Network Tabs -->
+                <div class="network-tabs">
+                    <button class="tab-button active" data-tab="followers">Followers</button>
+                    <button class="tab-button" data-tab="following">Following</button>
+                    <button class="tab-button" data-tab="collaborations">Collaborations</button>
+                </div>
+
+                <!-- Network Content -->
+                <div class="network-content">
+                    <!-- Followers List -->
+                    <div class="network-list active" id="followers-tab">
+                        <div class="user-card">
+                            <div class="user-avatar">S</div>
+                            <div class="user-info">
+                                <h4>Sarah Streamer</h4>
+                                <p>Just Streamed: 2 hours ago</p>
+                            </div>
+                            <button class="connect-button">Connect</button>
+                        </div>
+                        <div class="user-card">
+                            <div class="user-avatar">M</div>
+                            <div class="user-info">
+                                <h4>Mike Gaming</h4>
+                                <p>Live Now: Playing Valorant</p>
+                            </div>
+                            <button class="connect-button">Connect</button>
+                        </div>
+                    </div>
+
+                    <!-- Following List -->
+                    <div class="network-list" id="following-tab">
+                        <div class="user-card">
+                            <div class="user-avatar">J</div>
+                            <div class="user-info">
+                                <h4>Jane Content</h4>
+                                <p>Last Stream: Yesterday</p>
+                            </div>
+                            <button class="connect-button">Message</button>
+                        </div>
+                        <div class="user-card">
+                            <div class="user-avatar">T</div>
+                            <div class="user-info">
+                                <h4>Tom Twitch</h4>
+                                <p>Streaming: Fortnite</p>
+                            </div>
+                            <button class="connect-button">Message</button>
+                        </div>
+                    </div>
+
+                    <!-- Collaborations List -->
+                    <div class="network-list" id="collaborations-tab">
+                        <div class="collab-card">
+                            <h4>Stream Team Alpha</h4>
+                            <p>12 members • Gaming Collective</p>
+                            <div class="collab-actions">
+                                <button class="view-button">View Team</button>
+                                <button class="message-button">Message Team</button>
+                            </div>
+                        </div>
+                        <div class="collab-card">
+                            <h4>Content Creator Network</h4>
+                            <p>45 members • Cross-Platform Group</p>
+                            <div class="collab-actions">
+                                <button class="view-button">View Network</button>
+                                <button class="message-button">Message Network</button>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Recommended Connections -->
+                <div class="recommended-section">
+                    <h4>Recommended Connections</h4>
+                    <div class="recommended-grid">
+                        <div class="recommended-card">
+                            <div class="user-avatar">R</div>
+                            <h4>Rachel Gaming</h4>
+                            <p>15 mutual connections</p>
+                            <button class="connect-button">Connect</button>
+                        </div>
+                        <div class="recommended-card">
+                            <div class="user-avatar">D</div>
+                            <h4>David Streams</h4>
+                            <p>8 mutual connections</p>
+                            <button class="connect-button">Connect</button>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <div id="analytics-section" class="content-section">
+                <h3 class="section-title">Analytics</h3>
+                <div class="analytics-grid">
+                    <div class="analytics-card">
+                        <div class="metric-header">
+                            <h4>Total Views</h4>
+                            <span class="update-indicator" title="Last updated"></span>
+                        </div>
+                        <div class="analytics-value" id="totalViews">
+                            <div class="loading-spinner"></div>
+                        </div>
+                        <div class="metric-trend">
+                            <span class="trend-value" id="viewsTrend">+0%</span>
+                            <span class="trend-period">vs last 24h</span>
+                        </div>
+                    </div>
+                    <div class="analytics-card">
+                        <div class="metric-header">
+                            <h4>Watch Time</h4>
+                            <span class="update-indicator" title="Last updated"></span>
+                        </div>
+                        <div class="analytics-value" id="watchTime">
+                            <div class="loading-spinner"></div>
+                        </div>
+                        <div class="metric-trend">
+                            <span class="trend-value" id="watchTimeTrend">+0%</span>
+                            <span class="trend-period">vs last 24h</span>
+                        </div>
+                    </div>
+                    <div class="analytics-card">
+                        <div class="metric-header">
+                            <h4>Engagement</h4>
+                            <span class="update-indicator" title="Last updated"></span>
+                        </div>
+                        <div class="analytics-value" id="engagement">
+                            <div class="loading-spinner"></div>
+                        </div>
+                        <div class="metric-trend">
+                            <span class="trend-value" id="engagementTrend">+0%</span>
+                            <span class="trend-period">vs last 24h</span>
+                        </div>
+                    </div>
+                    <div class="analytics-card">
+                        <div class="metric-header">
+                            <h4>Growth</h4>
+                            <span class="update-indicator" title="Last updated"></span>
+                        </div>
+                        <div class="analytics-value" id="growth">
+                            <div class="loading-spinner"></div>
+                        </div>
+                        <div class="metric-trend">
+                            <span class="trend-value" id="growthTrend">+0%</span>
+                            <span class="trend-period">vs last 24h</span>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+
+
+
+
+            <div id="messages-section" class="content-section">
+                <h3 class="section-title">Messages</h3>
+                <input type="text" class="message-search" placeholder="Search messages...">
+                <div class="messages-container">
+                    <div class="message-thread" data-message-id="1">
+                        <div class="message-thread-header">
+                            <h4>Streamer Tips Support</h4>
+                            <div class="message-actions">
+                                <button class="message-action-btn delete-btn" title="Delete message">
+                                    <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+                                        <path d="M3 6h18"></path>
+                                        <path d="M19 6v14a2 2 0 0 1-2 2H7a2 2 0 0 1-2-2V6"></path>
+                                        <path d="M8 6V4a2 2 0 0 1 2-2h4a2 2 0 0 1 2 2v2"></path>
+                                    </svg>
+                                </button>
+                            </div>
+                        </div>
+                        <p>Welcome to Streamer Tips! How can we help you today?</p>
+                        <div class="message-meta">
+                            <span class="message-time">2 hours ago</span>
+                            <span class="message-status unread">Unread</span>
+                        </div>
+                    </div>
+                    <div class="message-thread" data-message-id="2">
+                        <div class="message-thread-header">
+                            <h4>Community Manager</h4>
+                            <div class="message-actions">
+                                <button class="message-action-btn delete-btn" title="Delete message">
+                                    <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+                                        <path d="M3 6h18"></path>
+                                        <path d="M19 6v14a2 2 0 0 1-2 2H7a2 2 0 0 1-2-2V6"></path>
+                                        <path d="M8 6V4a2 2 0 0 1 2-2h4a2 2 0 0 1 2 2v2"></path>
+                                    </svg>
+                                </button>
+                            </div>
+                        </div>
+                        <p>Your community engagement is growing!</p>
+                        <div class="message-meta">
+                            <span class="message-time">1 day ago</span>
+                            <span class="message-status">Read</span>
+                        </div>
+                    </div>
+                    <div class="message-thread" data-message-id="3">
+                        <div class="message-thread-header">
+                            <h4>Content Team</h4>
+                            <div class="message-actions">
+                                <button class="message-action-btn delete-btn" title="Delete message">
+                                    <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+                                        <path d="M3 6h18"></path>
+                                        <path d="M19 6v14a2 2 0 0 1-2 2H7a2 2 0 0 1-2-2V6"></path>
+                                        <path d="M8 6V4a2 2 0 0 1 2-2h4a2 2 0 0 1 2 2v2"></path>
+                                    </svg>
+                                </button>
+                            </div>
+                        </div>
+                        <p>New features coming to Streamer Tips...</p>
+                        <div class="message-meta">
+                            <span class="message-time">3 days ago</span>
+                            <span class="message-status">Read</span>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Message Detail View -->
+                <div class="message-detail">
+                    <div class="message-detail-header">
+                        <button class="back-button">
+                            <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+                                <path d="M19 12H5M12 19l-7-7 7-7"/>
+                            </svg>
+                            Back to Messages
+                        </button>
+                        <div class="message-detail-actions">
+                            <button class="message-action-btn delete-btn" title="Delete message">
+                                <svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+                                    <path d="M3 6h18"></path>
+                                    <path d="M19 6v14a2 2 0 0 1-2 2H7a2 2 0 0 1-2-2V6"></path>
+                                    <path d="M8 6V4a2 2 0 0 1 2-2h4a2 2 0 0 1 2 2v2"></path>
+                                </svg>
+                            </button>
+                        </div>
+                    </div>
+                    <div class="message-detail-content">
+                        <div class="message-sender">
+                            <div class="sender-avatar">S</div>
+                            <div class="sender-info">
+                                <h3 class="sender-name">Streamer Tips Support</h3>
+                                <span class="message-time">2 hours ago</span>
+                            </div>
+                        </div>
+                        <div class="message-body">
+                            <p>Welcome to Streamer Tips! How can we help you today?</p>
+                        </div>
+                        <div class="message-actions">
+                            <button class="reply-button">
+                                <svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+                                    <path d="M21 15a2 2 0 0 1-2 2H7l-4 4V5a2 2 0 0 1 2-2h14a2 2 0 0 1 2 2z"></path>
+                                </svg>
+                                Reply
+                            </button>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <div id="bookmarks-section" class="content-section">
+                <h3 class="section-title">Bookmarks</h3>
+                <div class="bookmarks-grid" id="bookmarksGrid">
+                    <!-- Bookmarks will be dynamically loaded here -->
+                </div>
+            </div>
+
+            <div id="calendar-section" class="content-section">
+                <h3 class="section-title">Content Calendar</h3>
+                
+                <!-- Calendar Controls -->
+                <div class="calendar-controls">
+                    <div class="calendar-nav">
+                        <button class="calendar-nav-btn" id="prev-btn" title="Previous">
+                            <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+                                <polyline points="15 18 9 12 15 6"></polyline>
+                            </svg>
+                        </button>
+                        <button class="calendar-nav-btn today-btn" title="Today">Today</button>
+                        <h4 id="current-date">March 2024</h4>
+                        <button class="calendar-nav-btn" id="next-btn" title="Next">
+                            <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+                                <polyline points="9 18 15 12 9 6"></polyline>
+                            </svg>
+                        </button>
+                    </div>
+                    <div class="calendar-view-toggle">
+                        <button class="view-toggle-btn active" data-view="month">Month</button>
+                        <button class="view-toggle-btn" data-view="week">Week</button>
+                    </div>
+                </div>
+
+                <!-- Calendar Grid -->
+                <div class="calendar-grid">
+                    <!-- Month View -->
+                    <div class="calendar-view month-view active">
+                        <!-- Week Headers -->
+                        <div class="week-header">
+                            <div>Sun</div>
+                            <div>Mon</div>
+                            <div>Tue</div>
+                            <div>Wed</div>
+                            <div>Thu</div>
+                            <div>Fri</div>
+                            <div>Sat</div>
+                        </div>
+
+                        <!-- Calendar Days Grid -->
+                        <div class="calendar-days-grid">
+                            <!-- Week 1 -->
+                            <div class="week-row">
+                                <div class="day-cell empty">
+                                    <div class="day-header">
+                                        <span class="day-number">25</span>
+                                        <button class="visibility-toggle" title="Toggle Public Visibility">
+                                            <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+                                                <path d="M1 12s4-8 11-8 11 8 11 8-4 8-11 8-11-8-11-8z"></path>
+                                                <circle cx="12" cy="12" r="3"></circle>
+                                            </svg>
+                                        </button>
+                                    </div>
+                                    <div class="day-content">
+                                        <button class="add-event-btn">+ Add Event</button>
+                                    </div>
+                                </div>
+                                <div class="day-cell empty">
+                                    <div class="day-header">
+                                        <span class="day-number">26</span>
+                                        <button class="visibility-toggle" title="Toggle Public Visibility">
+                                            <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+                                                <path d="M1 12s4-8 11-8 11 8 11 8-4 8-11 8-11-8-11-8z"></path>
+                                                <circle cx="12" cy="12" r="3"></circle>
+                                            </svg>
+                                        </button>
+                                    </div>
+                                    <div class="day-content">
+                                        <button class="add-event-btn">+ Add Event</button>
+                                    </div>
+                                </div>
+                                <div class="day-cell empty">
+                                    <div class="day-header">
+                                        <span class="day-number">27</span>
+                                        <button class="visibility-toggle" title="Toggle Public Visibility">
+                                            <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+                                                <path d="M1 12s4-8 11-8 11 8 11 8-4 8-11 8-11-8-11-8z"></path>
+                                                <circle cx="12" cy="12" r="3"></circle>
+                                            </svg>
+                                        </button>
+                                    </div>
+                                    <div class="day-content">
+                                        <button class="add-event-btn">+ Add Event</button>
+                                    </div>
+                                </div>
+                                <div class="day-cell empty">
+                                    <div class="day-header">
+                                        <span class="day-number">28</span>
+                                        <button class="visibility-toggle" title="Toggle Public Visibility">
+                                            <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+                                                <path d="M1 12s4-8 11-8 11 8 11 8-4 8-11 8-11-8-11-8z"></path>
+                                                <circle cx="12" cy="12" r="3"></circle>
+                                            </svg>
+                                        </button>
+                                    </div>
+                                    <div class="day-content">
+                                        <button class="add-event-btn">+ Add Event</button>
+                                    </div>
+                                </div>
+                                <div class="day-cell empty">
+                                    <div class="day-header">
+                                        <span class="day-number">29</span>
+                                        <button class="visibility-toggle" title="Toggle Public Visibility">
+                                            <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+                                                <path d="M1 12s4-8 11-8 11 8 11 8-4 8-11 8-11-8-11-8z"></path>
+                                                <circle cx="12" cy="12" r="3"></circle>
+                                            </svg>
+                                        </button>
+                                    </div>
+                                    <div class="day-content">
+                                        <button class="add-event-btn">+ Add Event</button>
+                                    </div>
+                                </div>
+                                <div class="day-cell empty">
+                                    <div class="day-header">
+                                        <span class="day-number">1</span>
+                                        <button class="visibility-toggle" title="Toggle Public Visibility">
+                                            <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+                                                <path d="M1 12s4-8 11-8 11 8 11 8-4 8-11 8-11-8-11-8z"></path>
+                                                <circle cx="12" cy="12" r="3"></circle>
+                                            </svg>
+                                        </button>
+                                    </div>
+                                    <div class="day-content">
+                                        <button class="add-event-btn">+ Add Event</button>
+                                    </div>
+                                </div>
+                            </div>
+
+                            <!-- Week 2 -->
+                            <div class="week-row">
+                                <div class="day-cell">
+                                    <div class="day-header">
+                                        <span class="day-number">2</span>
+                                        <button class="visibility-toggle" title="Toggle Public Visibility">
+                                            <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+                                                <path d="M1 12s4-8 11-8 11 8 11 8-4 8-11 8-11-8-11-8z"></path>
+                                                <circle cx="12" cy="12" r="3"></circle>
+                                            </svg>
+                                        </button>
+                                    </div>
+                                    <div class="day-content">
+                                        <button class="add-event-btn">+ Add Event</button>
+                                    </div>
+                                </div>
+                                <div class="day-cell">
+                                    <div class="day-header">
+                                        <span class="day-number">3</span>
+                                        <button class="visibility-toggle" title="Toggle Public Visibility">
+                                            <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+                                                <path d="M1 12s4-8 11-8 11 8 11 8-4 8-11 8-11-8-11-8z"></path>
+                                                <circle cx="12" cy="12" r="3"></circle>
+                                            </svg>
+                                        </button>
+                                    </div>
+                                    <div class="day-content">
+                                        <button class="add-event-btn">+ Add Event</button>
+                                    </div>
+                                </div>
+                                <div class="day-cell">
+                                    <div class="day-header">
+                                        <span class="day-number">4</span>
+                                        <button class="visibility-toggle" title="Toggle Public Visibility">
+                                            <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+                                                <path d="M1 12s4-8 11-8 11 8 11 8-4 8-11 8-11-8-11-8z"></path>
+                                                <circle cx="12" cy="12" r="3"></circle>
+                                            </svg>
+                                        </button>
+                                    </div>
+                                    <div class="day-content">
+                                        <button class="add-event-btn">+ Add Event</button>
+                                    </div>
+                                </div>
+                                <div class="day-cell">
+                                    <div class="day-header">
+                                        <span class="day-number">5</span>
+                                        <button class="visibility-toggle" title="Toggle Public Visibility">
+                                            <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+                                                <path d="M1 12s4-8 11-8 11 8 11 8-4 8-11 8-11-8-11-8z"></path>
+                                                <circle cx="12" cy="12" r="3"></circle>
+                                            </svg>
+                                        </button>
+                                    </div>
+                                    <div class="day-content">
+                                        <button class="add-event-btn">+ Add Event</button>
+                                    </div>
+                                </div>
+                                <div class="day-cell">
+                                    <div class="day-header">
+                                        <span class="day-number">6</span>
+                                        <button class="visibility-toggle" title="Toggle Public Visibility">
+                                            <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+                                                <path d="M1 12s4-8 11-8 11 8 11 8-4 8-11 8-11-8-11-8z"></path>
+                                                <circle cx="12" cy="12" r="3"></circle>
+                                            </svg>
+                                        </button>
+                                    </div>
+                                    <div class="day-content">
+                                        <button class="add-event-btn">+ Add Event</button>
+                                    </div>
+                                </div>
+                                <div class="day-cell">
+                                    <div class="day-header">
+                                        <span class="day-number">7</span>
+                                        <button class="visibility-toggle" title="Toggle Public Visibility">
+                                            <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+                                                <path d="M1 12s4-8 11-8 11 8 11 8-4 8-11 8-11-8-11-8z"></path>
+                                                <circle cx="12" cy="12" r="3"></circle>
+                                            </svg>
+                                        </button>
+                                    </div>
+                                    <div class="day-content">
+                                        <button class="add-event-btn">+ Add Event</button>
+                                    </div>
+                                </div>
+                                <div class="day-cell">
+                                    <div class="day-header">
+                                        <span class="day-number">8</span>
+                                        <button class="visibility-toggle" title="Toggle Public Visibility">
+                                            <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+                                                <path d="M1 12s4-8 11-8 11 8 11 8-4 8-11 8-11-8-11-8z"></path>
+                                                <circle cx="12" cy="12" r="3"></circle>
+                                            </svg>
+                                        </button>
+                                    </div>
+                                    <div class="day-content">
+                                        <button class="add-event-btn">+ Add Event</button>
+                                    </div>
+                                </div>
+                            </div>
+
+                            <!-- Week 3 -->
+                            <div class="week-row">
+                                <div class="day-cell">
+                                    <div class="day-header">
+                                        <span class="day-number">9</span>
+                                        <button class="visibility-toggle" title="Toggle Public Visibility">
+                                            <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+                                                <path d="M1 12s4-8 11-8 11 8 11 8-4 8-11 8-11-8-11-8z"></path>
+                                                <circle cx="12" cy="12" r="3"></circle>
+                                            </svg>
+                                        </button>
+                                    </div>
+                                    <div class="day-content">
+                                        <button class="add-event-btn">+ Add Event</button>
+                                    </div>
+                                </div>
+                                <div class="day-cell">
+                                    <div class="day-header">
+                                        <span class="day-number">10</span>
+                                        <button class="visibility-toggle" title="Toggle Public Visibility">
+                                            <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+                                                <path d="M1 12s4-8 11-8 11 8 11 8-4 8-11 8-11-8-11-8z"></path>
+                                                <circle cx="12" cy="12" r="3"></circle>
+                                            </svg>
+                                        </button>
+                                    </div>
+                                    <div class="day-content">
+                                        <button class="add-event-btn">+ Add Event</button>
+                                    </div>
+                                </div>
+                                <div class="day-cell">
+                                    <div class="day-header">
+                                        <span class="day-number">11</span>
+                                        <button class="visibility-toggle" title="Toggle Public Visibility">
+                                            <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+                                                <path d="M1 12s4-8 11-8 11 8 11 8-4 8-11 8-11-8-11-8z"></path>
+                                                <circle cx="12" cy="12" r="3"></circle>
+                                            </svg>
+                                        </button>
+                                    </div>
+                                    <div class="day-content">
+                                        <button class="add-event-btn">+ Add Event</button>
+                                    </div>
+                                </div>
+                                <div class="day-cell">
+                                    <div class="day-header">
+                                        <span class="day-number">12</span>
+                                        <button class="visibility-toggle" title="Toggle Public Visibility">
+                                            <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+                                                <path d="M1 12s4-8 11-8 11 8 11 8-4 8-11 8-11-8-11-8z"></path>
+                                                <circle cx="12" cy="12" r="3"></circle>
+                                            </svg>
+                                        </button>
+                                    </div>
+                                    <div class="day-content">
+                                        <button class="add-event-btn">+ Add Event</button>
+                                    </div>
+                                </div>
+                                <div class="day-cell">
+                                    <div class="day-header">
+                                        <span class="day-number">13</span>
+                                        <button class="visibility-toggle" title="Toggle Public Visibility">
+                                            <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+                                                <path d="M1 12s4-8 11-8 11 8 11 8-4 8-11 8-11-8-11-8z"></path>
+                                                <circle cx="12" cy="12" r="3"></circle>
+                                            </svg>
+                                        </button>
+                                    </div>
+                                    <div class="day-content">
+                                        <button class="add-event-btn">+ Add Event</button>
+                                    </div>
+                                </div>
+                                <div class="day-cell">
+                                    <div class="day-header">
+                                        <span class="day-number">14</span>
+                                        <button class="visibility-toggle" title="Toggle Public Visibility">
+                                            <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+                                                <path d="M1 12s4-8 11-8 11 8 11 8-4 8-11 8-11-8-11-8z"></path>
+                                                <circle cx="12" cy="12" r="3"></circle>
+                                            </svg>
+                                        </button>
+                                    </div>
+                                    <div class="day-content">
+                                        <button class="add-event-btn">+ Add Event</button>
+                                    </div>
+                                </div>
+                                <div class="day-cell">
+                                    <div class="day-header">
+                                        <span class="day-number">15</span>
+                                        <button class="visibility-toggle" title="Toggle Public Visibility">
+                                            <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+                                                <path d="M1 12s4-8 11-8 11 8 11 8-4 8-11 8-11-8-11-8z"></path>
+                                                <circle cx="12" cy="12" r="3"></circle>
+                                            </svg>
+                                        </button>
+                                    </div>
+                                    <div class="day-content">
+                                        <div class="scheduled-item">
+                                            <span class="time">14:00</span>
+                                            <span class="title">Valorant Stream</span>
+                                        </div>
+                                        <div class="scheduled-item">
+                                            <span class="time">18:00</span>
+                                            <span class="title">Community Q&A</span>
+                                        </div>
+                                        <button class="add-event-btn">+ Add Event</button>
+                                    </div>
+                                </div>
+                            </div>
+
+                            <!-- Week 4 -->
+                            <div class="week-row">
+                                <div class="day-cell">
+                                    <div class="day-header">
+                                        <span class="day-number">16</span>
+                                        <button class="visibility-toggle" title="Toggle Public Visibility">
+                                            <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+                                                <path d="M1 12s4-8 11-8 11 8 11 8-4 8-11 8-11-8-11-8z"></path>
+                                                <circle cx="12" cy="12" r="3"></circle>
+                                            </svg>
+                                        </button>
+                                    </div>
+                                    <div class="day-content">
+                                        <button class="add-event-btn">+ Add Event</button>
+                                    </div>
+                                </div>
+                                <div class="day-cell empty">
+                                    <div class="day-header">
+                                        <span class="day-number">17</span>
+                                        <button class="visibility-toggle" title="Toggle Public Visibility">
+                                            <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+                                                <path d="M1 12s4-8 11-8 11 8 11 8-4 8-11 8-11-8-11-8z"></path>
+                                                <circle cx="12" cy="12" r="3"></circle>
+                                            </svg>
+                                        </button>
+                                    </div>
+                                    <div class="day-content">
+                                        <button class="add-event-btn">+ Add Event</button>
+                                    </div>
+                                </div>
+                                <div class="day-cell empty">
+                                    <div class="day-header">
+                                        <span class="day-number">18</span>
+                                        <button class="visibility-toggle" title="Toggle Public Visibility">
+                                            <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+                                                <path d="M1 12s4-8 11-8 11 8 11 8-4 8-11 8-11-8-11-8z"></path>
+                                                <circle cx="12" cy="12" r="3"></circle>
+                                            </svg>
+                                        </button>
+                                    </div>
+                                    <div class="day-content">
+                                        <button class="add-event-btn">+ Add Event</button>
+                                    </div>
+                                </div>
+                                <div class="day-cell empty">
+                                    <div class="day-header">
+                                        <span class="day-number">19</span>
+                                        <button class="visibility-toggle" title="Toggle Public Visibility">
+                                            <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+                                                <path d="M1 12s4-8 11-8 11 8 11 8-4 8-11 8-11-8-11-8z"></path>
+                                                <circle cx="12" cy="12" r="3"></circle>
+                                            </svg>
+                                        </button>
+                                    </div>
+                                    <div class="day-content">
+                                        <button class="add-event-btn">+ Add Event</button>
+                                    </div>
+                                </div>
+                                <div class="day-cell">
+                                    <div class="day-header">
+                                        <span class="day-number">20</span>
+                                        <button class="visibility-toggle" title="Toggle Public Visibility">
+                                            <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+                                                <path d="M1 12s4-8 11-8 11 8 11 8-4 8-11 8-11-8-11-8z"></path>
+                                                <circle cx="12" cy="12" r="3"></circle>
+                                            </svg>
+                                        </button>
+                                    </div>
+                                    <div class="day-content">
+                                        <button class="add-event-btn">+ Add Event</button>
+                                    </div>
+                                </div>
+                                <div class="day-cell">
+                                    <div class="day-header">
+                                        <span class="day-number">21</span>
+                                        <button class="visibility-toggle" title="Toggle Public Visibility">
+                                            <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+                                                <path d="M1 12s4-8 11-8 11 8 11 8-4 8-11 8-11-8-11-8z"></path>
+                                                <circle cx="12" cy="12" r="3"></circle>
+                                            </svg>
+                                        </button>
+                                    </div>
+                                    <div class="day-content">
+                                        <button class="add-event-btn">+ Add Event</button>
+                                    </div>
+                                </div>
+                                <div class="day-cell">
+                                    <div class="day-header">
+                                        <span class="day-number">22</span>
+                                        <button class="visibility-toggle" title="Toggle Public Visibility">
+                                            <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+                                                <path d="M1 12s4-8 11-8 11 8 11 8-4 8-11 8-11-8-11-8z"></path>
+                                                <circle cx="12" cy="12" r="3"></circle>
+                                            </svg>
+                                        </button>
+                                    </div>
+                                    <div class="day-content">
+                                        <button class="add-event-btn">+ Add Event</button>
+                                    </div>
+                                </div>
+                            </div>
+
+                            <!-- Week 5 -->
+                            <div class="week-row">
+                                <div class="day-cell">
+                                    <div class="day-header">
+                                        <span class="day-number">23</span>
+                                        <button class="visibility-toggle" title="Toggle Public Visibility">
+                                            <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+                                                <path d="M1 12s4-8 11-8 11 8 11 8-4 8-11 8-11-8-11-8z"></path>
+                                                <circle cx="12" cy="12" r="3"></circle>
+                                            </svg>
+                                        </button>
+                                    </div>
+                                    <div class="day-content">
+                                        <button class="add-event-btn">+ Add Event</button>
+                                    </div>
+                                </div>
+                                <div class="day-cell">
+                                    <div class="day-header">
+                                        <span class="day-number">24</span>
+                                        <button class="visibility-toggle" title="Toggle Public Visibility">
+                                            <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+                                                <path d="M1 12s4-8 11-8 11 8 11 8-4 8-11 8-11-8-11-8z"></path>
+                                                <circle cx="12" cy="12" r="3"></circle>
+                                            </svg>
+                                        </button>
+                                    </div>
+                                    <div class="day-content">
+                                        <button class="add-event-btn">+ Add Event</button>
+                                    </div>
+                                </div>
+                                <div class="day-cell">
+                                    <div class="day-header">
+                                        <span class="day-number">25</span>
+                                        <button class="visibility-toggle" title="Toggle Public Visibility">
+                                            <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+                                                <path d="M1 12s4-8 11-8 11 8 11 8-4 8-11 8-11-8-11-8z"></path>
+                                                <circle cx="12" cy="12" r="3"></circle>
+                                            </svg>
+                                        </button>
+                                    </div>
+                                    <div class="day-content">
+                                        <button class="add-event-btn">+ Add Event</button>
+                                    </div>
+                                </div>
+                                <div class="day-cell">
+                                    <div class="day-header">
+                                        <span class="day-number">26</span>
+                                        <button class="visibility-toggle" title="Toggle Public Visibility">
+                                            <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+                                                <path d="M1 12s4-8 11-8 11 8 11 8-4 8-11 8-11-8-11-8z"></path>
+                                                <circle cx="12" cy="12" r="3"></circle>
+                                            </svg>
+                                        </button>
+                                    </div>
+                                    <div class="day-content">
+                                        <button class="add-event-btn">+ Add Event</button>
+                                    </div>
+                                </div>
+                                <div class="day-cell">
+                                    <div class="day-header">
+                                        <span class="day-number">27</span>
+                                        <button class="visibility-toggle" title="Toggle Public Visibility">
+                                            <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+                                                <path d="M1 12s4-8 11-8 11 8 11 8-4 8-11 8-11-8-11-8z"></path>
+                                                <circle cx="12" cy="12" r="3"></circle>
+                                            </svg>
+                                        </button>
+                                    </div>
+                                    <div class="day-content">
+                                        <button class="add-event-btn">+ Add Event</button>
+                                    </div>
+                                </div>
+                                <div class="day-cell">
+                                    <div class="day-header">
+                                        <span class="day-number">28</span>
+                                        <button class="visibility-toggle" title="Toggle Public Visibility">
+                                            <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+                                                <path d="M1 12s4-8 11-8 11 8 11 8-4 8-11 8-11-8-11-8z"></path>
+                                                <circle cx="12" cy="12" r="3"></circle>
+                                            </svg>
+                                        </button>
+                                    </div>
+                                    <div class="day-content">
+                                        <button class="add-event-btn">+ Add Event</button>
+                                    </div>
+                                </div>
+                                <div class="day-cell">
+                                    <div class="day-header">
+                                        <span class="day-number">29</span>
+                                        <button class="visibility-toggle" title="Toggle Public Visibility">
+                                            <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+                                                <path d="M1 12s4-8 11-8 11 8 11 8-4 8-11 8-11-8-11-8z"></path>
+                                                <circle cx="12" cy="12" r="3"></circle>
+                                            </svg>
+                                        </button>
+                                    </div>
+                                    <div class="day-content">
+                                        <button class="add-event-btn">+ Add Event</button>
+                                    </div>
+                                </div>
+                            </div>
+
+                            <!-- Week 6 -->
+                            <div class="week-row">
+                                <div class="day-cell">
+                                    <div class="day-header">
+                                        <span class="day-number">30</span>
+                                        <button class="visibility-toggle" title="Toggle Public Visibility">
+                                            <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+                                                <path d="M1 12s4-8 11-8 11 8 11 8-4 8-11 8-11-8-11-8z"></path>
+                                                <circle cx="12" cy="12" r="3"></circle>
+                                            </svg>
+                                        </button>
+                                    </div>
+                                    <div class="day-content">
+                                        <button class="add-event-btn">+ Add Event</button>
+                                    </div>
+                                </div>
+                                <div class="day-cell empty">
+                                    <div class="day-header">
+                                        <span class="day-number">1</span>
+                                        <button class="visibility-toggle" title="Toggle Public Visibility">
+                                            <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+                                                <path d="M1 12s4-8 11-8 11 8 11 8-4 8-11 8-11-8-11-8z"></path>
+                                                <circle cx="12" cy="12" r="3"></circle>
+                                            </svg>
+                                        </button>
+                                    </div>
+                                    <div class="day-content">
+                                        <button class="add-event-btn">+ Add Event</button>
+                                    </div>
+                                </div>
+                                <div class="day-cell empty">
+                                    <div class="day-header">
+                                        <span class="day-number">2</span>
+                                        <button class="visibility-toggle" title="Toggle Public Visibility">
+                                            <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+                                                <path d="M1 12s4-8 11-8 11 8 11 8-4 8-11 8-11-8-11-8z"></path>
+                                                <circle cx="12" cy="12" r="3"></circle>
+                                            </svg>
+                                        </button>
+                                    </div>
+                                    <div class="day-content">
+                                        <button class="add-event-btn">+ Add Event</button>
+                                    </div>
+                                </div>
+                                <div class="day-cell empty">
+                                    <div class="day-header">
+                                        <span class="day-number">3</span>
+                                        <button class="visibility-toggle" title="Toggle Public Visibility">
+                                            <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+                                                <path d="M1 12s4-8 11-8 11 8 11 8-4 8-11 8-11-8-11-8z"></path>
+                                                <circle cx="12" cy="12" r="3"></circle>
+                                            </svg>
+                                        </button>
+                                    </div>
+                                    <div class="day-content">
+                                        <button class="add-event-btn">+ Add Event</button>
+                                    </div>
+                                </div>
+                                <div class="day-cell empty">
+                                    <div class="day-header">
+                                        <span class="day-number">4</span>
+                                        <button class="visibility-toggle" title="Toggle Public Visibility">
+                                            <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+                                                <path d="M1 12s4-8 11-8 11 8 11 8-4 8-11 8-11-8-11-8z"></path>
+                                                <circle cx="12" cy="12" r="3"></circle>
+                                            </svg>
+                                        </button>
+                                    </div>
+                                    <div class="day-content">
+                                        <button class="add-event-btn">+ Add Event</button>
+                                    </div>
+                                </div>
+                                <div class="day-cell empty">
+                                    <div class="day-header">
+                                        <span class="day-number">5</span>
+                                        <button class="visibility-toggle" title="Toggle Public Visibility">
+                                            <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+                                                <path d="M1 12s4-8 11-8 11 8 11 8-4 8-11 8-11-8-11-8z"></path>
+                                                <circle cx="12" cy="12" r="3"></circle>
+                                            </svg>
+                                        </button>
+                                    </div>
+                                    <div class="day-content">
+                                        <button class="add-event-btn">+ Add Event</button>
+                                    </div>
+                                </div>
+                                <div class="day-cell empty">
+                                    <div class="day-header">
+                                        <span class="day-number">6</span>
+                                        <button class="visibility-toggle" title="Toggle Public Visibility">
+                                            <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+                                                <path d="M1 12s4-8 11-8 11 8 11 8-4 8-11 8-11-8-11-8z"></path>
+                                                <circle cx="12" cy="12" r="3"></circle>
+                                            </svg>
+                                        </button>
+                                    </div>
+                                    <div class="day-content">
+                                        <button class="add-event-btn">+ Add Event</button>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+
+                    <!-- Week View -->
+                    <div class="calendar-view week-view">
+                        <div class="week-header">
+                            <div>Sun</div>
+                            <div>Mon</div>
+                            <div>Tue</div>
+                            <div>Wed</div>
+                            <div>Thu</div>
+                            <div>Fri</div>
+                            <div>Sat</div>
+                        </div>
+                        <div class="week-grid">
+                            <div class="time-slots">
+                                <div class="time-slot">00:00</div>
+                                <div class="time-slot">01:00</div>
+                                <div class="time-slot">02:00</div>
+                                <div class="time-slot">03:00</div>
+                                <div class="time-slot">04:00</div>
+                                <div class="time-slot">05:00</div>
+                                <div class="time-slot">06:00</div>
+                                <div class="time-slot">07:00</div>
+                                <div class="time-slot">08:00</div>
+                                <div class="time-slot">09:00</div>
+                                <div class="time-slot">10:00</div>
+                                <div class="time-slot">11:00</div>
+                                <div class="time-slot">12:00</div>
+                                <div class="time-slot">13:00</div>
+                                <div class="time-slot">14:00</div>
+                                <div class="time-slot">15:00</div>
+                                <div class="time-slot">16:00</div>
+                                <div class="time-slot">17:00</div>
+                                <div class="time-slot">18:00</div>
+                                <div class="time-slot">19:00</div>
+                                <div class="time-slot">20:00</div>
+                                <div class="time-slot">21:00</div>
+                                <div class="time-slot">22:00</div>
+                                <div class="time-slot">23:00</div>
+                            </div>
+                            <div class="week-days">
+                                <!-- Sunday -->
+                                <div class="week-day">
+                                    <div class="day-header">
+                                        <span class="day-number">15</span>
+                                        <button class="visibility-toggle" title="Toggle Public Visibility">
+                                            <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+                                                <path d="M1 12s4-8 11-8 11 8 11 8-4 8-11 8-11-8-11-8z"></path>
+                                                <circle cx="12" cy="12" r="3"></circle>
+                                            </svg>
+                                        </button>
+                                    </div>
+                                    <div class="day-events">
+                                        <button class="add-event-btn">+ Add Event</button>
+                                    </div>
+                                </div>
+                                <!-- Monday -->
+                                <div class="week-day">
+                                    <div class="day-header">
+                                        <span class="day-number">16</span>
+                                        <button class="visibility-toggle" title="Toggle Public Visibility">
+                                            <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+                                                <path d="M1 12s4-8 11-8 11 8 11 8-4 8-11 8-11-8-11-8z"></path>
+                                                <circle cx="12" cy="12" r="3"></circle>
+                                            </svg>
+                                        </button>
+                                    </div>
+                                    <div class="day-events">
+                                        <div class="event-block event-block-positioned">
+                                            <span class="event-time">14:00</span>
+                                            <span class="event-title">Valorant Stream</span>
+                                        </div>
+                                        <button class="add-event-btn">+ Add Event</button>
+                                    </div>
+                                </div>
+                                <!-- Tuesday -->
+                                <div class="week-day">
+                                    <div class="day-header">
+                                        <span class="day-number">17</span>
+                                        <button class="visibility-toggle" title="Toggle Public Visibility">
+                                            <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+                                                <path d="M1 12s4-8 11-8 11 8 11 8-4 8-11 8-11-8-11-8z"></path>
+                                                <circle cx="12" cy="12" r="3"></circle>
+                                            </svg>
+                                        </button>
+                                    </div>
+                                    <div class="day-events">
+                                        <button class="add-event-btn">+ Add Event</button>
+                                    </div>
+                                </div>
+                                <!-- Wednesday -->
+                                <div class="week-day">
+                                    <div class="day-header">
+                                        <span class="day-number">18</span>
+                                        <button class="visibility-toggle" title="Toggle Public Visibility">
+                                            <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+                                                <path d="M1 12s4-8 11-8 11 8 11 8-4 8-11 8-11-8-11-8z"></path>
+                                                <circle cx="12" cy="12" r="3"></circle>
+                                            </svg>
+                                        </button>
+                                    </div>
+                                    <div class="day-events">
+                                        <button class="add-event-btn">+ Add Event</button>
+                                    </div>
+                                </div>
+                                <!-- Thursday -->
+                                <div class="week-day">
+                                    <div class="day-header">
+                                        <span class="day-number">19</span>
+                                        <button class="visibility-toggle" title="Toggle Public Visibility">
+                                            <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+                                                <path d="M1 12s4-8 11-8 11 8 11 8-4 8-11 8-11-8-11-8z"></path>
+                                                <circle cx="12" cy="12" r="3"></circle>
+                                            </svg>
+                                        </button>
+                                    </div>
+                                    <div class="day-events">
+                                        <button class="add-event-btn">+ Add Event</button>
+                                    </div>
+                                </div>
+                                <!-- Friday -->
+                                <div class="week-day">
+                                    <div class="day-header">
+                                        <span class="day-number">20</span>
+                                        <button class="visibility-toggle" title="Toggle Public Visibility">
+                                            <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+                                                <path d="M1 12s4-8 11-8 11 8 11 8-4 8-11 8-11-8-11-8z"></path>
+                                                <circle cx="12" cy="12" r="3"></circle>
+                                            </svg>
+                                        </button>
+                                    </div>
+                                    <div class="day-events">
+                                        <button class="add-event-btn">+ Add Event</button>
+                                    </div>
+                                </div>
+                                <!-- Saturday -->
+                                <div class="week-day">
+                                    <div class="day-header">
+                                        <span class="day-number">21</span>
+                                        <button class="visibility-toggle" title="Toggle Public Visibility">
+                                            <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+                                                <path d="M1 12s4-8 11-8 11 8 11 8-4 8-11 8-11-8-11-8z"></path>
+                                                <circle cx="12" cy="12" r="3"></circle>
+                                            </svg>
+                                        </button>
+                                    </div>
+                                    <div class="day-events">
+                                        <button class="add-event-btn">+ Add Event</button>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Event Modal -->
+            <div class="event-modal" id="eventModal">
+                <div class="modal-content">
+                    <div class="modal-header">
+                        <h3>Add Event</h3>
+                        <button class="close-modal" id="closeEventModal">
+                            <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+                                <line x1="18" y1="6" x2="6" y2="18"></line>
+                                <line x1="6" y1="6" x2="18" y2="18"></line>
+                            </svg>
+                        </button>
+                    </div>
+                    <form class="event-form" id="eventForm">
+                        <div class="form-group">
+                            <label for="eventTitle">Event Title</label>
+                            <input type="text" id="eventTitle" placeholder="Enter event title" required>
+                        </div>
+                        <div class="form-group">
+                            <label for="eventDate">Date</label>
+                            <input type="date" id="eventDate" required>
+                        </div>
+                        <div class="form-group">
+                            <label>Time</label>
+                            <div class="time-inputs">
+                                <div class="time-field">
+                                    <label for="startTime">Start Time</label>
+                                    <input type="time" id="startTime" required>
+                                </div>
+                                <div class="time-field">
+                                    <label for="endTime">End Time</label>
+                                    <input type="time" id="endTime" required>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="form-group">
+                            <label for="eventDescription">Description</label>
+                            <textarea id="eventDescription" placeholder="Enter event description"></textarea>
+                        </div>
+                        <div class="form-group">
+                            <label class="toggle-label">
+                                <input type="checkbox" id="isPublic">
+                                <span class="toggle-text">Make this event public</span>
+                            </label>
+                        </div>
+                        <div class="form-actions">
+                            <button type="button" class="cancel-button" id="cancelEvent">Cancel</button>
+                            <button type="submit" class="save-button">Save Event</button>
+                        </div>
+                    </form>
+                </div>
+            </div>
+        </div>
+    </main>
+
+    <!-- Debug Section (remove in production) -->
+    <div id="debug-section" class="debug-section">
+        <div>Debug Info:</div>
+        <div id="debug-auth"></div>
+        <div id="debug-user"></div>
+        <button onclick="window.refreshProfile()" class="debug-button">Refresh Profile</button>
+        <button onclick="window.resetToTechnqsProfile()" class="debug-button">Reset to Technqs</button>
+        <button onclick="window.simulateAppData()" class="debug-button">Simulate App Data</button>
+        <button onclick="window.triggerAppSync()" class="debug-button">Sync App</button>
+        <button onclick="window.testEditProfileViewSync()" class="debug-button">Test EditProfileView</button>
+        <button onclick="window.testAvatarDisplay()" class="debug-button">Test Avatar Display</button>
+        <button onclick="window.testAppAvatarSync()" class="debug-button">Test App Sync</button>
+        <button onclick="window.clearAppData()" class="debug-button">Clear App Data</button>
+        <button onclick="window.clearAllTestData()" class="debug-button">Clear All Test Data</button>
+        <button onclick="window.addTestPost()" class="debug-button">Add Test Post</button>
+        <button onclick="window.addTestFollower()" class="debug-button">Add Follower</button>
+        <button onclick="window.addTestFollowing()" class="debug-button">Add Following</button>
+        <button onclick="window.debugSections()" class="debug-button">Debug Sections</button>
+    </div>
+
+    <!-- Footer -->
+    <footer>
+        <div class="footer-content">
+            <div class="footer-logo">
+                <a class="logo" href="index.html">Streamer Tips</a>
+            </div>
+            <div class="footer-links">
+                <a class="footer-link" href="creator-tools.html">Creator Tools</a>
+                <a class="footer-link" href="streamer-academy.html">Streamer Academy</a>
+                <a class="footer-link" href="#">About Us</a>
+                <a class="footer-link" href="#">Contact</a>
+            </div>
+        </div>
+    </footer>
+
+    <script src="assets/js/main.js"></script>
+    <script src="assets/js/profile.js"></script>
+    <script src="assets/js/bookmark.js"></script>
+
+</body>
+</html> 

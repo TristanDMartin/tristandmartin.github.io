@@ -1,0 +1,451 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <link rel="stylesheet" href="assets/css/checklist.css">
+    <meta charset="utf-8" />
+    <meta content="width=device-width, initial-scale=1.0" name="viewport" />
+    <title>Gaming Peripherals</title>
+    <link href="assets/css/styles.css" rel="stylesheet" />
+    <link href="assets/css/core-components.css" rel="stylesheet" />
+    <link href="assets/css/footer.css" rel="stylesheet" />
+    <link href="assets/css/peripherals.css" rel="stylesheet" />
+    <link href="assets/css/modal-styles.css" rel="stylesheet" />
+    <link crossorigin="" href="https://fonts.gstatic.com" rel="preconnect" />
+    <link href="https://fonts.googleapis.com/css2?family=Nunito:wght@400;600;700&display=swap" rel="stylesheet">
+</head>
+<body class="peripherals-page">
+        <div class="modal-overlay" id="signupModal">
+        <div class="modal">
+            <button class="modal-close" aria-label="Close modal">
+                <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none"
+                    stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+                    <line x1="18" y1="6" x2="6" y2="18"></line>
+                    <line x1="6" y1="6" x2="18" y2="18"></line>
+                </svg>
+            </button>
+            <h2>Join <span>StreamerTips</span></h2>
+            <form class="signup-form">
+                <div class="form-group">
+                    <label for="signup-username">Username</label>
+                    <input type="text" id="signup-username" placeholder="Choose a username" required>
+                </div>
+                <div class="form-group">
+                    <label for="signup-email">Email</label>
+                    <input type="email" id="signup-email" placeholder="Enter your email" required>
+                </div>
+                <div class="form-group">
+                    <label for="signup-password">Password</label>
+                    <input type="password" id="signup-password" placeholder="Create a password" required>
+                </div>
+                <div class="form-group">
+                    <label for="signup-confirm-password">Confirm Password</label>
+                    <input type="password" id="signup-confirm-password" placeholder="Confirm your password" required>
+                </div>
+                <button type="submit" class="submit-btn gradient-btn">Create Account</button>
+                <div class="social-auth">
+                    <p>Or sign up with</p>
+                    <div class="social-buttons">
+                        <button type="button" class="social-btn gradient-btn">
+                            <svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" viewBox="0 0 24 24"
+                                fill="currentColor">
+                                <path
+                                    d="M22.56 12.25c0-.78-.07-1.53-.2-2.25H12v4.26h5.92c-.26 1.37-1.04 2.53-2.21 3.31v2.77h3.57c2.08-1.92 3.28-4.74 3.28-8.09z"
+                                    fill="#4285F4" />
+                                <path
+                                    d="M12 23c2.97 0 5.46-.98 7.28-2.66l-3.57-2.77c-.98.66-2.23 1.06-3.71 1.06-2.86 0-5.29-1.93-6.16-4.53H2.18v2.84C3.99 20.53 7.7 23 12 23z"
+                                    fill="#34A853" />
+                                <path
+                                    d="M5.84 14.09c-.22-.66-.35-1.36-.35-2.09s.13-1.43.35-2.09V7.07H2.18C1.43 8.55 1 10.22 1 12s.43 3.45 1.18 4.93l2.85-2.22.81-.62z"
+                                    fill="#FBBC05" />
+                                <path
+                                    d="M12 5.38c1.62 0 3.06.56 4.21 1.64l3.15-3.15C17.45 2.09 14.97 1 12 1 7.7 1 3.99 3.47 2.18 7.07l3.66 2.84c.87-2.6 3.3-4.53 6.16-4.53z"
+                                    fill="#EA4335" />
+                            </svg>
+                            Google
+                        </button>
+                    </div>
+                </div>
+                <div class="switch-form">
+                    Already have an account? <a href="#" class="switch-to-login">Log in</a>
+                </div>
+            </form>
+        </div>
+    </div>
+                <div class="switch-form">
+                    Already have an account? <a class="switch-to-login" href="#">Log in</a>
+                </div>
+            </form>
+        </div>
+    </div>
+        <div class="modal-overlay" id="loginModal">
+        <div class="modal">
+            <button class="modal-close" aria-label="Close modal">
+                <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none"
+                    stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+                    <line x1="18" y1="6" x2="6" y2="18"></line>
+                    <line x1="6" y1="6" x2="18" y2="18"></line>
+                </svg>
+            </button>
+            <h2>Welcome to <span>StreamerTips</span></h2>
+            <form class="login-form">
+                <div class="form-group">
+                    <label for="login-email">Email or Username</label>
+                    <input type="text" id="login-email" placeholder="Enter your email or username" required>
+                </div>
+                <div class="form-group">
+                    <label for="login-password">Password</label>
+                    <input type="password" id="login-password" placeholder="Enter your password" required>
+                </div>
+                <button type="submit" class="submit-btn gradient-btn">Log In</button>
+                <div class="social-auth">
+                    <p>Or log in with</p>
+                    <div class="social-buttons">
+                        <button type="button" class="social-btn gradient-btn">
+                            <svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" viewBox="0 0 24 24"
+                                fill="currentColor">
+                                <path
+                                    d="M22.56 12.25c0-.78-.07-1.53-.2-2.25H12v4.26h5.92c-.26 1.37-1.04 2.53-2.21 3.31v2.77h3.57c2.08-1.92 3.28-4.74 3.28-8.09z"
+                                    fill="#4285F4" />
+                                <path
+                                    d="M12 23c2.97 0 5.46-.98 7.28-2.66l-3.57-2.77c-.98.66-2.23 1.06-3.71 1.06-2.86 0-5.29-1.93-6.16-4.53H2.18v2.84C3.99 20.53 7.7 23 12 23z"
+                                    fill="#34A853" />
+                                <path
+                                    d="M5.84 14.09c-.22-.66-.35-1.36-.35-2.09s.13-1.43.35-2.09V7.07H2.18C1.43 8.55 1 10.22 1 12s.43 3.45 1.18 4.93l2.85-2.22.81-.62z"
+                                    fill="#FBBC05" />
+                                <path
+                                    d="M12 5.38c1.62 0 3.06.56 4.21 1.64l3.15-3.15C17.45 2.09 14.97 1 12 1 7.7 1 3.99 3.47 2.18 7.07l3.66 2.84c.87-2.6 3.3-4.53 6.16-4.53z"
+                                    fill="#EA4335" />
+                            </svg>
+                            Google
+                        </button>
+                    </div>
+                </div>
+                <div class="switch-form">
+                    Don't have an account? <a href="#" class="switch-to-signup">Sign up</a>
+                </div>
+            </form>
+        </div>
+    </div>
+                <div class="switch-form">
+                    Don't have an account? <a class="switch-to-signup" href="#">Sign up</a>
+                </div>
+            </form>
+        </div>
+    </div>
+    <header>
+        <div class="header-content">
+            <a href="index.html" class="logo">Streamer Tips</a>
+            <div class="search-container">
+                <input type="text" class="search-input" placeholder="Search tools, guides, tutorials...">
+                <svg class="search-icon" xmlns="http://www.w3.org/2000/svg" width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+                    <circle cx="11" cy="11" r="8"></circle>
+                    <line x1="21" y1="21" x2="16.65" y2="16.65"></line>
+                </svg>
+            </div>
+            <div class="header-right">
+                <a href="login.html" class="auth-button login">Log In</a>
+                <a href="signup.html" class="auth-button signup">Sign Up</a>
+                <a href="#" class="profile-button" aria-label="Profile">
+                    <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+                        <path d="M20 21v-2a4 4 0 0 0-4-4H8a4 4 0 0 0-4 4v2"></path>
+                        <circle cx="12" cy="7" r="4"></circle>
+                    </svg>
+                </a>
+            </div>
+        </div>
+    </header>
+
+    <nav class="sidebar">
+        <div class="sidebar-nav">
+            <a href="index.html" >
+                <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+                    <path d="M3 9l9-7 9 7v11a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2z"></path>
+                    <polyline points="9 22 9 12 15 12 15 22"></polyline>
+                </svg>
+                Home
+            </a>
+            <a href="creator-tools.html">
+                <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+                    <rect x="3" y="3" width="7" height="7"></rect>
+                    <rect x="14" y="3" width="7" height="7"></rect>
+                    <rect x="14" y="14" width="7" height="7"></rect>
+                    <rect x="3" y="14" width="7" height="7"></rect>
+                </svg>
+                Creator Tools
+            </a>
+            <a href="streamer-academy.html">
+                <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+                    <path d="M2 3h6a4 4 0 0 1 4 4v14a3 3 0 0 0-3-3H2z"></path>
+                    <path d="M22 3h-6a4 4 0 0 0-4 4v14a3 3 0 0 1 3-3h7z"></path>
+                </svg>
+                Academy
+            </a>
+            <a class="active" href="peripherals.html">
+                <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+                    <path d="M12 2v4M12 18v4M4.93 4.93l2.83 2.83M16.24 16.24l2.83 2.83M2 12h4M18 12h4M4.93 19.07l2.83-2.83M16.24 7.76l2.83-2.83"></path>
+                </svg>
+                Peripherals
+            </a>
+            <a href="events.html">
+                <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+                    <circle cx="12" cy="12" r="10"></circle>
+                    <polygon points="10 8 16 12 10 16 10 8"></polygon>
+                </svg>
+                Live Events
+            </a>
+            <a href="profile.html">
+                <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+                    <path d="M20 21v-2a4 4 0 0 0-4-4H8a4 4 0 0 0-4 4v2"></path>
+                    <circle cx="12" cy="7" r="4"></circle>
+                </svg>
+                Profile
+            </a>
+            <div class="settings-dropdown">
+                <a href="#" class="settings-trigger">
+                    <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+                        <circle cx="12" cy="12" r="1"></circle>
+                        <circle cx="19" cy="12" r="1"></circle>
+                        <circle cx="5" cy="12" r="1"></circle>
+                    </svg>
+                    More
+                </a>
+                <div class="settings-menu">
+                    <a href="account.html" class="settings-item">Account</a>
+                    <!-- <a href="#" class="settings-item">Profile</a>
+                    <a href="#" class="settings-item">Privacy</a>
+                    <a href="#" class="settings-item">Preferences</a>
+                    <a href="#" class="settings-item">Notifications</a>
+                    <a href="#" class="settings-item">Email</a> -->
+                    <a href="#" class="settings-item logout">Logout</a>
+                    <button id="theme-toggle" class="settings-item" aria-label="Toggle light or dark mode" tabindex="0">Toggle Light/Dark Mode</button>
+                </div>
+            </div>
+        </div>
+    </nav>
+
+    <main>
+        <section class="hero index-hero">
+            <div class="hero-content index-hero-content">
+                <h1><span class="white-text">Gaming</span> <span>Peripherals</span></h1>
+                <p>Curated selection of essential gaming gear for streamers and gamers</p>
+            </div>
+        </section>
+
+        <div class="peripherals-container">
+            <!-- Gaming Mouse -->
+            <div class="peripheral-category">
+                <h2 class="category-title">🎮 Gaming Mouse</h2>
+                <div class="tier-grid">
+                    <div class="tier-card">
+                        <h3 class="tier-name">Budget</h3>
+                        <p class="product-name">Logitech G203 / Razer Viper Mini</p>
+                        <a href="https://www.amazon.com/s?k=Logitech+G203" class="product-link" target="_blank">Buy on Amazon</a>
+                    </div>
+                    <div class="tier-card">
+                        <h3 class="tier-name">Mid-Tier</h3>
+                        <p class="product-name">Glorious Model O / Logitech G502 Hero</p>
+                        <a href="https://www.amazon.com/s?k=Glorious+Model+O" class="product-link" target="_blank">Buy on Amazon</a>
+                    </div>
+                    <div class="tier-card">
+                        <h3 class="tier-name">Premium</h3>
+                        <p class="product-name">Logitech G Pro X Superlight / Razer DeathAdder V3 Pro</p>
+                        <a href="https://www.amazon.com/s?k=Logitech+G+Pro+X+Superlight" class="product-link" target="_blank">Buy on Amazon</a>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Gaming Keyboard -->
+            <div class="peripheral-category">
+                <h2 class="category-title">⌨️ Gaming Keyboard</h2>
+                <div class="tier-grid">
+                    <div class="tier-card">
+                        <h3 class="tier-name">Budget</h3>
+                        <p class="product-name">Redragon K552 / Royal Kludge RK61</p>
+                        <a href="https://www.amazon.com/s?k=Redragon+K552" class="product-link" target="_blank">Buy on Amazon</a>
+                    </div>
+                    <div class="tier-card">
+                        <h3 class="tier-name">Mid-Tier</h3>
+                        <p class="product-name">SteelSeries Apex 5 / Ducky One 2 Mini</p>
+                        <a href="https://www.amazon.com/s?k=SteelSeries+Apex+5" class="product-link" target="_blank">Buy on Amazon</a>
+                    </div>
+                    <div class="tier-card">
+                        <h3 class="tier-name">Premium</h3>
+                        <p class="product-name">Logitech G915 TKL / Wooting 60HE</p>
+                        <a href="https://www.amazon.com/s?k=Logitech+G915+TKL" class="product-link" target="_blank">Buy on Amazon</a>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Gaming Headset -->
+            <div class="peripheral-category">
+                <h2 class="category-title">🎧 Gaming Headset</h2>
+                <div class="tier-grid">
+                    <div class="tier-card">
+                        <h3 class="tier-name">Budget</h3>
+                        <p class="product-name">HyperX Cloud Stinger / Razer BlackShark V2 X</p>
+                        <a href="https://www.amazon.com/s?k=HyperX+Cloud+Stinger" class="product-link" target="_blank">Buy on Amazon</a>
+                    </div>
+                    <div class="tier-card">
+                        <h3 class="tier-name">Mid-Tier</h3>
+                        <p class="product-name">SteelSeries Arctis 5 / Corsair HS80</p>
+                        <a href="https://www.amazon.com/s?k=SteelSeries+Arctis+5" class="product-link" target="_blank">Buy on Amazon</a>
+                    </div>
+                    <div class="tier-card">
+                        <h3 class="tier-name">Premium</h3>
+                        <p class="product-name">Astro A50 Wireless / Beyerdynamic MMX 300</p>
+                        <a href="https://www.amazon.com/s?k=Astro+A50+Wireless" class="product-link" target="_blank">Buy on Amazon</a>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Microphone -->
+            <div class="peripheral-category">
+                <h2 class="category-title">🎤 Microphone</h2>
+                <div class="tier-grid">
+                    <div class="tier-card">
+                        <h3 class="tier-name">Budget</h3>
+                        <p class="product-name">Fifine K669B / Tonor TC-777</p>
+                        <a href="https://www.amazon.com/s?k=Fifine+K669B" class="product-link" target="_blank">Buy on Amazon</a>
+                    </div>
+                    <div class="tier-card">
+                        <h3 class="tier-name">Mid-Tier</h3>
+                        <p class="product-name">Elgato Wave:3 / Razer Seiren V2 X</p>
+                        <a href="https://www.amazon.com/s?k=Elgato+Wave+3" class="product-link" target="_blank">Buy on Amazon</a>
+                    </div>
+                    <div class="tier-card">
+                        <h3 class="tier-name">Premium</h3>
+                        <p class="product-name">Shure MV7 / Elgato Wave DX</p>
+                        <a href="https://www.amazon.com/s?k=Shure+MV7" class="product-link" target="_blank">Buy on Amazon</a>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Mouse Pad -->
+            <div class="peripheral-category">
+                <h2 class="category-title">🖱️ Mouse Pad</h2>
+                <div class="tier-grid">
+                    <div class="tier-card">
+                        <h3 class="tier-name">Budget</h3>
+                        <p class="product-name">AmazonBasics XXL / SteelSeries QcK</p>
+                        <a href="https://www.amazon.com/s?k=AmazonBasics+XXL+Mousepad" class="product-link" target="_blank">Buy on Amazon</a>
+                    </div>
+                    <div class="tier-card">
+                        <h3 class="tier-name">Mid-Tier</h3>
+                        <p class="product-name">Glorious 3XL / Razer Gigantus V2</p>
+                        <a href="https://www.amazon.com/s?k=Glorious+3XL+Mousepad" class="product-link" target="_blank">Buy on Amazon</a>
+                    </div>
+                    <div class="tier-card">
+                        <h3 class="tier-name">Premium</h3>
+                        <p class="product-name">Artisan Zero / Lethal Gaming Gear Saturn Pro</p>
+                        <a href="https://www.amazon.com/s?k=Artisan+Zero+Mousepad" class="product-link" target="_blank">Buy on Amazon</a>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Monitors -->
+            <div class="peripheral-category">
+                <h2 class="category-title">🖥️ Monitors</h2>
+                <div class="tier-grid">
+                    <div class="tier-card">
+                        <h3 class="tier-name">Budget</h3>
+                        <p class="product-name">AOC 24G2 / ASUS VG248QG</p>
+                        <a href="https://www.amazon.com/s?k=AOC+24G2" class="product-link" target="_blank">Buy on Amazon</a>
+                    </div>
+                    <div class="tier-card">
+                        <h3 class="tier-name">Mid-Tier</h3>
+                        <p class="product-name">MSI Optix MAG274QRF / LG 27GN800-B</p>
+                        <a href="https://www.amazon.com/s?k=MSI+Optix+MAG274QRF" class="product-link" target="_blank">Buy on Amazon</a>
+                    </div>
+                    <div class="tier-card">
+                        <h3 class="tier-name">Premium</h3>
+                        <p class="product-name">Alienware AW2725DF / ASUS ROG Swift OLED PG27AQDM</p>
+                        <a href="https://www.amazon.com/s?k=Alienware+AW2725DF" class="product-link" target="_blank">Buy on Amazon</a>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Webcam -->
+            <div class="peripheral-category">
+                <h2 class="category-title">📹 Webcam</h2>
+                <div class="tier-grid">
+                    <div class="tier-card">
+                        <h3 class="tier-name">Budget</h3>
+                        <p class="product-name">Logitech C270 / NexiGo N60</p>
+                        <a href="https://www.amazon.com/s?k=Logitech+C270" class="product-link" target="_blank">Buy on Amazon</a>
+                    </div>
+                    <div class="tier-card">
+                        <h3 class="tier-name">Mid-Tier</h3>
+                        <p class="product-name">Logitech C922 / Elgato Facecam Mini</p>
+                        <a href="https://www.amazon.com/s?k=Logitech+C922" class="product-link" target="_blank">Buy on Amazon</a>
+                    </div>
+                    <div class="tier-card">
+                        <h3 class="tier-name">Premium</h3>
+                        <p class="product-name">Sony ZV-1 / Logitech BRIO 4K</p>
+                        <a href="https://www.amazon.com/s?k=Sony+ZV-1" class="product-link" target="_blank">Buy on Amazon</a>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Controller -->
+            <div class="peripheral-category">
+                <h2 class="category-title">🎮 Controller</h2>
+                <div class="tier-grid">
+                    <div class="tier-card">
+                        <h3 class="tier-name">Budget</h3>
+                        <p class="product-name">PowerA Enhanced Wired / 8BitDo Pro 2</p>
+                        <a href="https://www.amazon.com/s?k=PowerA+Enhanced+Wired" class="product-link" target="_blank">Buy on Amazon</a>
+                    </div>
+                    <div class="tier-card">
+                        <h3 class="tier-name">Mid-Tier</h3>
+                        <p class="product-name">Xbox Wireless Controller / DualSense PS5</p>
+                        <a href="https://www.amazon.com/s?k=Xbox+Wireless+Controller" class="product-link" target="_blank">Buy on Amazon</a>
+                    </div>
+                    <div class="tier-card">
+                        <h3 class="tier-name">Premium</h3>
+                        <p class="product-name">Xbox Elite Series 2 / SCUF Reflex Pro</p>
+                        <a href="https://www.amazon.com/s?k=Xbox+Elite+Series+2" class="product-link" target="_blank">Buy on Amazon</a>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Capture Card -->
+            <div class="peripheral-category">
+                <h2 class="category-title">🎥 Capture Card</h2>
+                <div class="tier-grid">
+                    <div class="tier-card">
+                        <h3 class="tier-name">Budget</h3>
+                        <p class="product-name">Mirabox / AVerMedia GC311</p>
+                        <a href="https://www.amazon.com/s?k=Mirabox+Capture+Card" class="product-link" target="_blank">Buy on Amazon</a>
+                    </div>
+                    <div class="tier-card">
+                        <h3 class="tier-name">Mid-Tier</h3>
+                        <p class="product-name">Elgato HD60 X / Razer Ripsaw HD</p>
+                        <a href="https://www.amazon.com/s?k=Elgato+HD60+X" class="product-link" target="_blank">Buy on Amazon</a>
+                    </div>
+                    <div class="tier-card">
+                        <h3 class="tier-name">Premium</h3>
+                        <p class="product-name">Elgato 4K60 Pro / Magewell Pro Capture</p>
+                        <a href="https://www.amazon.com/s?k=Elgato+4K60+Pro" class="product-link" target="_blank">Buy on Amazon</a>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </main>
+
+    <footer>
+        <div class="footer-content">
+            <div class="footer-logo">
+                <a class="logo" href="index.html">Streamer Tips</a>
+            </div>
+            <div class="footer-links">
+                <a class="footer-link" href="creator-tools.html">Creator Tools</a>
+                <a class="footer-link" href="streamer-academy.html">Streamer Academy</a>
+                <a class="footer-link" href="#">About Us</a>
+                <a class="footer-link" href="#">Contact</a>
+            </div>
+        </div>
+    </footer>
+    <script src="assets/js/main.js"></script>
+    <script src="assets/js/bookmark.js"></script>
+</body>
+</html> 

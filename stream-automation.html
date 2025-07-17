@@ -1,0 +1,433 @@
+<!DOCTYPE html>
+
+<html lang="en">
+
+<head>
+    <meta charset="utf-8" />
+    <meta content="width=device-width, initial-scale=1.0" name="viewport" />
+    <title>Stream Automation</title>
+    <link href="https://fonts.googleapis.com" rel="preconnect" />
+    <link crossorigin="" href="https://fonts.gstatic.com" rel="preconnect" />
+    <link href="https://fonts.googleapis.com/css2?family=Nunito:ital,wght@0,200..1000;1,200..1000&amp;display=swap"
+        rel="stylesheet" />
+    <link href="assets/css/styles.css" rel="stylesheet" />
+    <link href="assets/css/core-components.css" rel="stylesheet" />
+    <link href="assets/css/footer.css" rel="stylesheet" />
+    <link href="assets/css/modal-styles.css" rel="stylesheet" />
+    <link href="assets/css/guide-styles.css" rel="stylesheet" />
+</head>
+
+<body>
+        <div class="modal-overlay" id="signupModal">
+        <div class="modal">
+            <button class="modal-close" aria-label="Close modal">
+                <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none"
+                    stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+                    <line x1="18" y1="6" x2="6" y2="18"></line>
+                    <line x1="6" y1="6" x2="18" y2="18"></line>
+                </svg>
+            </button>
+            <h2>Join <span>StreamerTips</span></h2>
+            <form class="signup-form">
+                <div class="form-group">
+                    <label for="signup-username">Username</label>
+                    <input type="text" id="signup-username" placeholder="Choose a username" required>
+                </div>
+                <div class="form-group">
+                    <label for="signup-email">Email</label>
+                    <input type="email" id="signup-email" placeholder="Enter your email" required>
+                </div>
+                <div class="form-group">
+                    <label for="signup-password">Password</label>
+                    <input type="password" id="signup-password" placeholder="Create a password" required>
+                </div>
+                <div class="form-group">
+                    <label for="signup-confirm-password">Confirm Password</label>
+                    <input type="password" id="signup-confirm-password" placeholder="Confirm your password" required>
+                </div>
+                <button type="submit" class="submit-btn gradient-btn">Create Account</button>
+                <div class="social-auth">
+                    <p>Or sign up with</p>
+                    <div class="social-buttons">
+                        <button type="button" class="social-btn gradient-btn">
+                            <svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" viewBox="0 0 24 24"
+                                fill="currentColor">
+                                <path
+                                    d="M22.56 12.25c0-.78-.07-1.53-.2-2.25H12v4.26h5.92c-.26 1.37-1.04 2.53-2.21 3.31v2.77h3.57c2.08-1.92 3.28-4.74 3.28-8.09z"
+                                    fill="#4285F4" />
+                                <path
+                                    d="M12 23c2.97 0 5.46-.98 7.28-2.66l-3.57-2.77c-.98.66-2.23 1.06-3.71 1.06-2.86 0-5.29-1.93-6.16-4.53H2.18v2.84C3.99 20.53 7.7 23 12 23z"
+                                    fill="#34A853" />
+                                <path
+                                    d="M5.84 14.09c-.22-.66-.35-1.36-.35-2.09s.13-1.43.35-2.09V7.07H2.18C1.43 8.55 1 10.22 1 12s.43 3.45 1.18 4.93l2.85-2.22.81-.62z"
+                                    fill="#FBBC05" />
+                                <path
+                                    d="M12 5.38c1.62 0 3.06.56 4.21 1.64l3.15-3.15C17.45 2.09 14.97 1 12 1 7.7 1 3.99 3.47 2.18 7.07l3.66 2.84c.87-2.6 3.3-4.53 6.16-4.53z"
+                                    fill="#EA4335" />
+                            </svg>
+                            Google
+                        </button>
+                    </div>
+                </div>
+                <div class="switch-form">
+                    Already have an account? <a href="#" class="switch-to-login">Log in</a>
+                </div>
+            </form>
+        </div>
+    </div>
+                <div class="switch-form">
+                    Already have an account? <a class="switch-to-login" href="#">Log in</a>
+                </div>
+            </form>
+        </div>
+    </div>
+        <div class="modal-overlay" id="loginModal">
+        <div class="modal">
+            <button class="modal-close" aria-label="Close modal">
+                <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none"
+                    stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+                    <line x1="18" y1="6" x2="6" y2="18"></line>
+                    <line x1="6" y1="6" x2="18" y2="18"></line>
+                </svg>
+            </button>
+            <h2>Welcome to <span>StreamerTips</span></h2>
+            <form class="login-form">
+                <div class="form-group">
+                    <label for="login-email">Email or Username</label>
+                    <input type="text" id="login-email" placeholder="Enter your email or username" required>
+                </div>
+                <div class="form-group">
+                    <label for="login-password">Password</label>
+                    <input type="password" id="login-password" placeholder="Enter your password" required>
+                </div>
+                <button type="submit" class="submit-btn gradient-btn">Log In</button>
+                <div class="social-auth">
+                    <p>Or log in with</p>
+                    <div class="social-buttons">
+                        <button type="button" class="social-btn gradient-btn">
+                            <svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" viewBox="0 0 24 24"
+                                fill="currentColor">
+                                <path
+                                    d="M22.56 12.25c0-.78-.07-1.53-.2-2.25H12v4.26h5.92c-.26 1.37-1.04 2.53-2.21 3.31v2.77h3.57c2.08-1.92 3.28-4.74 3.28-8.09z"
+                                    fill="#4285F4" />
+                                <path
+                                    d="M12 23c2.97 0 5.46-.98 7.28-2.66l-3.57-2.77c-.98.66-2.23 1.06-3.71 1.06-2.86 0-5.29-1.93-6.16-4.53H2.18v2.84C3.99 20.53 7.7 23 12 23z"
+                                    fill="#34A853" />
+                                <path
+                                    d="M5.84 14.09c-.22-.66-.35-1.36-.35-2.09s.13-1.43.35-2.09V7.07H2.18C1.43 8.55 1 10.22 1 12s.43 3.45 1.18 4.93l2.85-2.22.81-.62z"
+                                    fill="#FBBC05" />
+                                <path
+                                    d="M12 5.38c1.62 0 3.06.56 4.21 1.64l3.15-3.15C17.45 2.09 14.97 1 12 1 7.7 1 3.99 3.47 2.18 7.07l3.66 2.84c.87-2.6 3.3-4.53 6.16-4.53z"
+                                    fill="#EA4335" />
+                            </svg>
+                            Google
+                        </button>
+                    </div>
+                </div>
+                <div class="switch-form">
+                    Don't have an account? <a href="#" class="switch-to-signup">Sign up</a>
+                </div>
+            </form>
+        </div>
+    </div>
+                <div class="switch-form">
+                    Don't have an account? <a class="switch-to-signup" href="#">Sign up</a>
+                </div>
+            </form>
+        </div>
+    </div>
+    <header>
+        <div class="header-content">
+            <a class="logo" href="index.html">Streamer Tips</a>
+            <div class="search-container">
+                <input class="search-input" placeholder="Search tools, guides, tutorials..." type="text" />
+                <svg class="search-icon" fill="none" height="20" stroke="currentColor" stroke-linecap="round"
+                    stroke-linejoin="round" stroke-width="2" viewbox="0 0 24 24" width="20"
+                    xmlns="http://www.w3.org/2000/svg">
+                    <circle cx="11" cy="11" r="8"></circle>
+                    <line x1="21" x2="16.65" y1="21" y2="16.65"></line>
+                </svg>
+            </div>
+            <div class="header-right">
+                <a class="auth-button login" href="login.html">Log In</a>
+                <a class="auth-button signup" href="signup.html">Sign Up</a>
+                <a aria-label="Profile" class="profile-button" href="#">
+                    <svg fill="none" height="24" stroke="currentColor" stroke-linecap="round" stroke-linejoin="round"
+                        stroke-width="2" viewbox="0 0 24 24" width="24" xmlns="http://www.w3.org/2000/svg">
+                        <path d="M20 21v-2a4 4 0 0 0-4-4H8a4 4 0 0 0-4 4v2"></path>
+                        <circle cx="12" cy="7" r="4"></circle>
+                    </svg>
+                </a>
+            </div>
+        </div>
+    </header>
+    
+    <nav class="sidebar">
+        <div class="sidebar-nav">
+            <a href="index.html" >
+                <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+                    <path d="M3 9l9-7 9 7v11a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2z"></path>
+                    <polyline points="9 22 9 12 15 12 15 22"></polyline>
+                </svg>
+                Home
+            </a>
+            <a href="creator-tools.html">
+                <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+                    <rect x="3" y="3" width="7" height="7"></rect>
+                    <rect x="14" y="3" width="7" height="7"></rect>
+                    <rect x="14" y="14" width="7" height="7"></rect>
+                    <rect x="3" y="14" width="7" height="7"></rect>
+                </svg>
+                Creator Tools
+            </a>
+            <a href="streamer-academy.html">
+                <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+                    <path d="M2 3h6a4 4 0 0 1 4 4v14a3 3 0 0 0-3-3H2z"></path>
+                    <path d="M22 3h-6a4 4 0 0 0-4 4v14a3 3 0 0 1 3-3h7z"></path>
+                </svg>
+                Academy
+            </a>
+            <a href="peripherals.html">
+                <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+                    <path d="M12 2v4M12 18v4M4.93 4.93l2.83 2.83M16.24 16.24l2.83 2.83M2 12h4M18 12h4M4.93 19.07l2.83-2.83M16.24 7.76l2.83-2.83"></path>
+                </svg>
+                Peripherals
+            </a>
+            <a href="events.html">
+                <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+                    <circle cx="12" cy="12" r="10"></circle>
+                    <polygon points="10 8 16 12 10 16 10 8"></polygon>
+                </svg>
+                Live Events
+            </a>
+            <a href="profile.html">
+                <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+                    <path d="M20 21v-2a4 4 0 0 0-4-4H8a4 4 0 0 0-4 4v2"></path>
+                    <circle cx="12" cy="7" r="4"></circle>
+                </svg>
+                Profile
+            </a>
+            <div class="settings-dropdown">
+                <a href="#" class="settings-trigger">
+                    <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+                        <circle cx="12" cy="12" r="1"></circle>
+                        <circle cx="19" cy="12" r="1"></circle>
+                        <circle cx="5" cy="12" r="1"></circle>
+                    </svg>
+                    More
+                </a>
+                <div class="settings-menu">
+                    <a href="account.html" class="settings-item">Account</a>
+                    <!-- <a href="#" class="settings-item">Profile</a>
+                    <a href="#" class="settings-item">Privacy</a>
+                    <a href="#" class="settings-item">Preferences</a>
+                    <a href="#" class="settings-item">Notifications</a>
+                    <a href="#" class="settings-item">Email</a> -->
+                    <a href="#" class="settings-item logout">Logout</a>
+                    <button id="theme-toggle" class="settings-item" aria-label="Toggle light or dark mode" tabindex="0">Toggle Light/Dark Mode</button>
+                </div>
+            </div>
+        </div>
+    </nav>
+
+    <main>
+        <section class="hero-section">
+            <div class="hero-content">
+                <h1>Stream <span>Automation</span></h1>
+                <p>Master advanced automation for professional streaming setups</p>
+            </div>
+        </section>
+        <section class="content-section">
+            <div class="guide-section">
+                <p>As your stream grows, managing alerts, transitions, overlays, scene changes, lighting, and engagement
+                    tools can become overwhelming. Stream automation helps you control complex tasks with minimal
+                    effort—letting you focus on content while the behind-the-scenes magic happens automatically.</p>
+                <p>Whether you're using a Stream Deck, scripts, bots, or third-party integrations, automation lets you
+                    create a high-quality, professional experience for your viewers—without multitasking burnout.</p>
+                <h2>What Is Stream Automation?</h2>
+                <p>Stream automation refers to the use of software, macros, scripts, or hardware to:</p>
+                <ul>
+                    <li>Automatically switch scenes based on actions (e.g., mute/unmute, game launch)</li>
+                    <li>Control lighting and sound with one button</li>
+                    <li>Trigger alerts or overlays with events (like subs, follows, raids)</li>
+                    <li>Run complex multi-step commands from a single trigger</li>
+                </ul>
+                <h2>Popular Stream Automation Tools</h2>
+                <h3>Elgato Stream Deck</h3>
+                <ul>
+                    <li>Customizable macro keyboard with drag-and-drop actions</li>
+                    <li>Integrates with OBS, Twitch, Spotify, Twitter, Philips Hue, and more</li>
+                    <li>Supports Multi-Actions: one button can switch scenes, tweet, play music, and more</li>
+                </ul>
+                <h3>LioranBoard / Mix It Up</h3>
+                <ul>
+                    <li>Free, open-source, powerful alternatives to Stream Deck</li>
+                    <li>Event-based triggers: Twitch events (subs, donations) cause automatic actions</li>
+                    <li>Custom scripts, overlays, and chatbot actions included</li>
+                </ul>
+                <h3>Touch Portal</h3>
+                <ul>
+                    <li>Stream Deck-like app for PC/tablet/phone</li>
+                    <li>Integrates with OBS, Spotify, Twitch, and more</li>
+                    <li>Great for remote or mobile control of your stream</li>
+                </ul>
+                <h3>OBS Websocket + Advanced Scene Switcher</h3>
+                <ul>
+                    <li>Auto-switch OBS scenes based on window focus, audio input, or timed events</li>
+                    <li>Great for "hands-off" stream transitions</li>
+                </ul>
+                <h2>Use Case Examples</h2>
+                <table class="comparison-table">
+                    <thead>
+                        <tr>
+                            <th>Automation Task</th>
+                            <th>Tool Used</th>
+                            <th>Description</th>
+                        </tr>
+                    </thead>
+                    <tbody>
+                        <tr>
+                            <td>Auto-switch to "BRB" scene if mic is muted</td>
+                            <td>Advanced Scene Switcher</td>
+                            <td>Detects muted mic state and switches scenes</td>
+                        </tr>
+                        <tr>
+                            <td>Turn on key lights and open OBS with one button</td>
+                            <td>Stream Deck</td>
+                            <td>Multi-action toggle</td>
+                        </tr>
+                        <tr>
+                            <td>Auto-shoutout new chatters or subs</td>
+                            <td>Mix It Up / LioranBoard</td>
+                            <td>Triggers from Twitch API</td>
+                        </tr>
+                        <tr>
+                            <td>Lower game volume and raise mic when speaking</td>
+                            <td>Voicemeeter + Stream Deck</td>
+                            <td>Hotkey audio routing</td>
+                        </tr>
+                    </tbody>
+                </table>
+                <h2>Best Practices</h2>
+                <ul>
+                    <li>Test extensively before going live. Automation errors mid-stream can confuse viewers.</li>
+                    <li>Use confirmation sounds or visual cues to confirm that automation has triggered.</li>
+                    <li>Combine tools—e.g., Stream Deck for local actions + Mix It Up for Twitch events.</li>
+                    <li>Keep fallback manual controls ready, in case automation fails.</li>
+                </ul>
+                <h2>Example Video Tutorials</h2>
+                <div class="video-grid">
+                    <div class="video-card">
+                        <div class="video-container">
+                            <iframe
+                                allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
+                                allowfullscreen="" frameborder="0" height="315"
+                                referrerpolicy="strict-origin-when-cross-origin"
+                                src="https://www.youtube.com/embed/besbluqc3MU?si=6RK5EVOGFo-22n3O"
+                                title="YouTube video player" width="560"></iframe>
+                        </div>
+                        <div class="video-info">
+                            <h3>Top 10 Stream Deck Automations (2024)</h3>
+                            <p>Essential automations for streamers</p>
+                        </div>
+                    </div>
+                    <div class="video-card">
+                        <div class="video-container">
+                            <iframe
+                                allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
+                                allowfullscreen="" frameborder="0" height="315"
+                                referrerpolicy="strict-origin-when-cross-origin"
+                                src="https://www.youtube.com/embed/7mffXq10k6w?si=Y1vdcguKZEpFhTmO"
+                                title="YouTube video player" width="560"></iframe>
+                        </div>
+                        <div class="video-info">
+                            <h3>Ultimate LioranBoard Setup for Twitch Events</h3>
+                            <p>Complete automation guide</p>
+                        </div>
+                    </div>
+                    <div class="video-card">
+                        <div class="video-container">
+                            <iframe
+                                allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
+                                allowfullscreen="" frameborder="0" height="315"
+                                referrerpolicy="strict-origin-when-cross-origin"
+                                src="https://www.youtube.com/embed/W2m7TOFsi24?si=1ayGwLusvryhKbTH"
+                                title="YouTube video player" width="560"></iframe>
+                        </div>
+                        <div class="video-info">
+                            <h3>Automate OBS with Advanced Scene Switcher</h3>
+                            <p>Scene automation tutorial</p>
+                        </div>
+                    </div>
+                    
+                </div>
+                <h2>Additional Resources</h2>
+                <ul>
+                    <li><a href="https://www.elgato.com/en/stream-deck" style="color: #66FCF1; text-decoration: none;"
+                            target="_blank">Elgato Stream Deck Plugins Store</a></li>
+                    <li><a href="https://mixitupapp.com/" style="color: #66FCF1; text-decoration: none;"
+                            target="_blank">Mix It Up Bot</a></li>
+                    <li><a href="https://www.touch-portal.com/" style="color: #66FCF1; text-decoration: none;"
+                            target="_blank">Touch Portal Website</a></li>
+                    <li><a href="https://github.com/obsproject/obs-websocket"
+                            style="color: #66FCF1; text-decoration: none;" target="_blank">OBS Websocket Plugin</a></li>
+                    <li><a href="https://obsproject.com/forum/resources/advanced-scene-switcher.395/"
+                            style="color: #66FCF1; text-decoration: none;" target="_blank">Advanced Scene Switcher
+                            Plugin</a></li>
+                </ul>
+                <h2>Final Thoughts</h2>
+                <p>Stream automation isn't just for convenience—it's a gateway to professional-level production. By
+                    automating repetitive tasks and syncing tools across your hardware and software, you reduce the
+                    chance of errors, save mental bandwidth, and create a polished experience your audience will
+                    appreciate.</p>
+                <p>If you'd like, I can help design a personalized automation layout or script plan tailored to your
+                    stream setup. Just let me know your tools and platforms!</p>
+            </div>
+        </section>
+    </main>
+    
+    <footer>
+        <div class="footer-content">
+            <div class="footer-logo">
+                <a class="logo" href="index.html">Streamer Tips</a>
+            </div>
+            <div class="footer-links">
+                <a class="footer-link" href="creator-tools.html">Creator Tools</a>
+                <a class="footer-link" href="streamer-academy.html">Streamer Academy</a>
+                <a class="footer-link" href="#">About Us</a>
+                <a class="footer-link" href="#">Contact</a>
+            </div>
+        </div>
+    </footer>
+    <button class="streaming-checklist-button" id="bookmarkButton" aria-label="Bookmark this page">
+        <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+            <path d="M19 21l-7-5-7 5V5a2 2 0 0 1 2-2h10a2 2 0 0 1 2 2z"></path>
+        </svg>
+    </button>
+    <script src="assets/js/main.js"></script>
+    <script src="assets/js/bookmark.js"></script>
+
+        // Authentication state management
+        else {
+                // User is not logged in - hide logout, show auth buttons, hide profile
+                if (logoutButton) logoutButton.style.display = 'none';
+                authButtons.forEach(btn => btn.style.display = 'block');
+                if (profileButton) profileButton.style.display = 'none';
+            }
+        }
+        
+        // Handle logout
+        document.querySelector('.logout')?.addEventListener('click', function(e) {
+            e.preventDefault();
+            localStorage.removeItem('isLoggedIn');
+            localStorage.removeItem('user');
+
+            // Close settings menu if it exists
+            const settingsMenu = document.querySelector('.settings-menu');
+            if (settingsMenu) settingsMenu.style.display = 'none';
+        });
+        
+        // Initialize auth state on page load
+
+</body>
+</html>
