@@ -1,0 +1,557 @@
+/* Modal Styles */
+.modal-overlay {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background: rgba(11, 12, 16, 0.8);
+    backdrop-filter: blur(8px);
+    display: none;
+    justify-content: center;
+    align-items: center;
+    z-index: 2000;
+    opacity: 0;
+    transition: opacity 0.3s ease;
+}
+
+/* Hide logout button by default */
+.settings-item.logout {
+    display: none;
+}
+
+.modal-overlay.active {
+    display: flex;
+    opacity: 1;
+}
+
+.modal {
+    background: rgba(31, 40, 51, 0.95);
+    border-radius: 15px;
+    width: 100%;
+    max-width: 400px;
+    padding: 2rem;
+    position: relative;
+    border: 2px solid transparent;
+    background-clip: padding-box;
+    box-shadow: 0 10px 30px rgba(0, 0, 0, 0.3);
+    transform: translateY(20px);
+    transition: transform 0.3s ease;
+}
+
+.modal::before {
+    content: '';
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    border-radius: 15px;
+    padding: 2px;
+    background: linear-gradient(45deg, #667eea, #764ba2);
+    mask: linear-gradient(#fff 0 0) content-box, linear-gradient(#fff 0 0);
+    mask-composite: exclude;
+    -webkit-mask: linear-gradient(#fff 0 0) content-box, linear-gradient(#fff 0 0);
+    -webkit-mask-composite: xor;
+    pointer-events: none;
+}
+
+.modal-overlay.active .modal {
+    transform: translateY(0);
+}
+
+.modal-close {
+    position: absolute;
+    top: 1rem;
+    right: 1rem;
+    background: none;
+    border: none;
+    color: #C5C6C7;
+    cursor: pointer;
+    padding: 0.5rem;
+    transition: all 0.3s ease;
+}
+
+.modal-close:hover {
+    color: #667eea;
+    transform: rotate(90deg);
+}
+
+.modal h2 {
+    color: #C5C6C7;
+    font-size: 2rem;
+    margin-bottom: 1.5rem;
+    text-align: center;
+}
+
+.modal h2 span {
+    background: linear-gradient(45deg, #667eea, #764ba2);
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+    background-size: 200% 200%;
+    animation: gradient 3s ease infinite;
+}
+
+.modal .form-group {
+    margin-bottom: 1.5rem;
+}
+
+.modal .form-group label {
+    display: block;
+    color: #C5C6C7;
+    margin-bottom: 0.5rem;
+    font-weight: 500;
+}
+
+.modal .form-group input {
+    width: 100%;
+    padding: 0.8rem 1rem;
+    border-radius: 8px;
+    border: 2px solid transparent;
+    background: rgba(31, 40, 51, 0.5);
+    color: #C5C6C7;
+    font-size: 1rem;
+    transition: all 0.3s ease;
+    position: relative;
+}
+
+.modal .form-group input::before {
+    content: '';
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    border-radius: 8px;
+    padding: 2px;
+    background: linear-gradient(45deg, #667eea, #764ba2);
+    mask: linear-gradient(#fff 0 0) content-box, linear-gradient(#fff 0 0);
+    mask-composite: exclude;
+    -webkit-mask: linear-gradient(#fff 0 0) content-box, linear-gradient(#fff 0 0);
+    -webkit-mask-composite: xor;
+    pointer-events: none;
+}
+
+.modal .form-group input:focus {
+    outline: none;
+    border-color: #667eea;
+    box-shadow: 0 0 0 2px rgba(102, 126, 234, 0.1);
+}
+
+.modal .form-group input::placeholder {
+    color: rgba(197, 198, 199, 0.5);
+}
+
+.modal .submit-btn {
+    width: 100%;
+    padding: 1rem;
+    border: none;
+    border-radius: 8px;
+    background: linear-gradient(45deg, #667eea, #764ba2);
+    color: #ffffff;
+    font-size: 1.1rem;
+    font-weight: 600;
+    cursor: pointer;
+    transition: all 0.3s ease;
+    margin-top: 1rem;
+}
+
+.modal .submit-btn:hover {
+    transform: translateY(-2px);
+    box-shadow: 0 5px 15px rgba(102, 126, 234, 0.2);
+}
+
+.modal .switch-form {
+    text-align: center;
+    margin-top: 1.5rem;
+    color: #C5C6C7;
+}
+
+.modal .switch-form a {
+    color: #667eea;
+    text-decoration: none;
+    font-weight: 500;
+    transition: all 0.3s ease;
+}
+
+.modal .switch-form a:hover {
+    text-decoration: underline;
+}
+
+.modal .social-auth {
+    margin-top: 2rem;
+    text-align: center;
+}
+
+.modal .social-auth p {
+    color: #C5C6C7;
+    margin-bottom: 1rem;
+    position: relative;
+}
+
+.modal .social-auth p::before,
+.modal .social-auth p::after {
+    content: '';
+    position: absolute;
+    top: 50%;
+    width: 30%;
+    height: 1px;
+    background: linear-gradient(45deg, #667eea, #764ba2);
+}
+
+.modal .social-auth p::before {
+    left: 0;
+}
+
+.modal .social-auth p::after {
+    right: 0;
+}
+
+.modal .social-buttons {
+    display: flex;
+    gap: 1rem;
+    justify-content: center;
+}
+
+.modal .social-btn {
+    padding: 0.8rem 1.5rem;
+    border: 2px solid transparent;
+    border-radius: 8px;
+    background: transparent;
+    color: #C5C6C7;
+    cursor: pointer;
+    transition: all 0.3s ease;
+    display: flex;
+    align-items: center;
+    gap: 0.5rem;
+    position: relative;
+}
+
+.modal .social-btn::before {
+    content: '';
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    border-radius: 8px;
+    padding: 2px;
+    background: linear-gradient(45deg, #667eea, #764ba2);
+    mask: linear-gradient(#fff 0 0) content-box, linear-gradient(#fff 0 0);
+    mask-composite: exclude;
+    -webkit-mask: linear-gradient(#fff 0 0) content-box, linear-gradient(#fff 0 0);
+    -webkit-mask-composite: xor;
+    pointer-events: none;
+}
+
+.modal .social-btn:hover {
+    background: rgba(102, 126, 234, 0.1);
+    border-color: #667eea;
+}
+
+/* Header Right Styles */
+.header-right {
+    display: flex;
+    align-items: center;
+    gap: 1rem;
+}
+
+.auth-button {
+    padding: 0.5rem 1.2rem;
+    border-radius: 20px;
+    text-decoration: none;
+    font-weight: 500;
+    transition: all 0.3s ease;
+    font-size: 0.9rem;
+}
+
+.auth-button.login {
+    color: #667eea;
+    border: 1px solid #667eea;
+    background: transparent;
+}
+
+.auth-button.login:hover {
+    background: rgba(102, 126, 234, 0.1);
+    transform: translateY(-1px);
+}
+
+.auth-button.signup {
+    color: #ffffff;
+    background: linear-gradient(45deg, #667eea, #764ba2);
+    border: none;
+}
+
+.auth-button.signup:hover {
+    transform: translateY(-1px);
+    box-shadow: 0 4px 15px rgba(102, 126, 234, 0.2);
+}
+
+/* Hero section styles to match other pages */
+.hero.index-hero {
+    background: linear-gradient(135deg, #667eea 0%, #764ba2 100%);
+    padding: 9rem 2rem 4rem;
+    text-align: center;
+    position: relative;
+    overflow: hidden;
+    border-bottom: 2px solid #667eea;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    min-height: 400px;
+    margin-top: 0;
+}
+
+.hero-content.index-hero-content {
+    max-width: 800px;
+    margin: 0 auto;
+    color: #C5C6C7;
+    position: relative;
+    z-index: 1;
+    text-align: center;
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.hero-content.index-hero-content h1 {
+    font-size: 3.5rem;
+    font-weight: 700;
+    margin-bottom: 1.5rem;
+    line-height: 1.2;
+}
+
+.hero-content.index-hero-content .white-text {
+    color: #C5C6C7;
+}
+
+.hero-content.index-hero-content p {
+    font-size: 1.2rem;
+    margin-bottom: 2rem;
+    max-width: 600px;
+}
+
+/* Update section headings to use animated gradient */
+.skill-levels h2 span,
+.platforms h2 span {
+    background: linear-gradient(90deg, #9a5ee2 0%, #7768df 25%, #1670de 50%, #3c8bd6 75%, #4897d2 100%);
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+    background-size: 200% 200%;
+    animation: gradient 3s ease infinite;
+}
+
+/* Update skill level cards */
+.skill-level-card {
+    background: rgba(31, 40, 51, 0.5);
+    border-radius: 10px;
+    padding: 2rem;
+    border: 1px solid transparent;
+    background-clip: padding-box;
+    position: relative;
+    backdrop-filter: blur(10px);
+    text-decoration: none;
+    transition: all 0.3s ease;
+}
+
+.skill-level-card::before {
+    content: '';
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    border-radius: 10px;
+    padding: 1px;
+    background: linear-gradient(90deg, #9a5ee2 0%, #7768df 25%, #1670de 50%, #3c8bd6 75%, #4897d2 100%);
+    background-size: 200% 200%;
+    animation: gradient 3s ease infinite;
+    -webkit-mask: linear-gradient(#fff 0 0) content-box, linear-gradient(#fff 0 0);
+    -webkit-mask-composite: xor;
+    mask: linear-gradient(#fff 0 0) content-box, linear-gradient(#fff 0 0);
+    mask-composite: exclude;
+    z-index: -1;
+}
+
+.skill-level-card:hover {
+    transform: translateY(-5px);
+    border-color: #66FCF1;
+    box-shadow: 0 10px 30px rgba(102, 252, 241, 0.1);
+    background: linear-gradient(45deg, rgba(102, 252, 241, 0.1), rgba(69, 162, 158, 0.1));
+    background-size: 200% 200%;
+    animation: gradient 3s ease infinite;
+}
+
+.skill-level-card h3 {
+    color: #66FCF1;
+    font-size: 1.8rem;
+    margin-bottom: 1.5rem;
+    background: linear-gradient(90deg, #9a5ee2 0%, #7768df 25%, #1670de 50%, #3c8bd6 75%, #4897d2 100%);
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+}
+
+/* Update platform cards */
+.platform-card {
+    background: rgba(31, 40, 51, 0.5);
+    border-radius: 10px;
+    padding: 2rem;
+    border: 1px solid transparent;
+    background-clip: padding-box;
+    position: relative;
+    backdrop-filter: blur(10px);
+    text-decoration: none;
+    transition: all 0.3s ease;
+}
+
+.platform-card::before {
+    content: '';
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    border-radius: 10px;
+    padding: 1px;
+    background: linear-gradient(90deg, #9a5ee2 0%, #7768df 25%, #1670de 50%, #3c8bd6 75%, #4897d2 100%);
+    background-size: 200% 200%;
+    animation: gradient 3s ease infinite;
+    -webkit-mask: linear-gradient(#fff 0 0) content-box, linear-gradient(#fff 0 0);
+    -webkit-mask-composite: xor;
+    mask: linear-gradient(#fff 0 0) content-box, linear-gradient(#fff 0 0);
+    mask-composite: exclude;
+    z-index: -1;
+}
+
+.platform-card:hover {
+    transform: translateY(-5px);
+    border-color: #66FCF1;
+    box-shadow: 0 10px 30px rgba(102, 252, 241, 0.1);
+    background: linear-gradient(45deg, rgba(102, 252, 241, 0.1), rgba(69, 162, 158, 0.1));
+    background-size: 200% 200%;
+    animation: gradient 3s ease infinite;
+}
+
+.platform-card h3 {
+    color: #66FCF1;
+    font-size: 1.8rem;
+    margin-bottom: 1.5rem;
+    display: flex;
+    align-items: center;
+    gap: 1rem;
+    background: linear-gradient(90deg, #9a5ee2 0%, #7768df 25%, #1670de 50%, #3c8bd6 75%, #4897d2 100%);
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+}
+
+.platform-card a {
+    color: #C5C6C7;
+    text-decoration: none;
+    transition: color 0.3s ease;
+}
+
+.platform-card a:hover {
+    color: #667eea;
+}
+
+/* Light Mode Styles */
+body.light-mode .skill-level-card,
+body.light-mode .platform-card {
+    background: rgba(255, 255, 255, 0.95);
+    border: 1px solid transparent;
+    background-clip: padding-box;
+    color: #495057;
+}
+
+body.light-mode .skill-level-card::before,
+body.light-mode .platform-card::before {
+    background: linear-gradient(90deg, #9a5ee2 0%, #7768df 25%, #1670de 50%, #3c8bd6 75%, #4897d2 100%);
+    background-size: 200% 200%;
+    animation: gradient 3s ease infinite;
+}
+
+body.light-mode .skill-level-card h3,
+body.light-mode .platform-card h3 {
+    color: #495057;
+}
+
+body.light-mode .platform-card a {
+    color: #6c757d;
+}
+
+body.light-mode .platform-card a:hover {
+    color: #667eea;
+}
+
+/* Responsive Design */
+@media (max-width: 768px) {
+    .hero-content.index-hero-content h1 {
+        font-size: 2.5rem;
+    }
+    
+    .skill-levels h2,
+    .platforms h2 {
+        font-size: 2rem;
+    }
+}
+
+/* Bullet Point Styles */
+.skill-level-card ul,
+.platform-card ul {
+    list-style: none;
+    padding-left: 0;
+    margin: 0;
+}
+
+.skill-level-card li,
+.platform-card li {
+    position: relative;
+    padding-left: 1.5rem;
+    margin-bottom: 0.8rem;
+    color: #66FCF1;
+}
+
+.skill-level-card li::before,
+.platform-card li::before {
+    content: '•';
+    position: absolute;
+    left: 0;
+    top: 0;
+    color: #667eea;
+    font-weight: bold;
+    font-size: 1.2em;
+}
+
+.skill-level-card li a,
+.platform-card li a {
+    color: #66FCF1;
+    text-decoration: none;
+    transition: color 0.3s ease;
+}
+
+.skill-level-card li a:hover,
+.platform-card li a:hover {
+    color: #667eea;
+}
+
+/* Light Mode Bullet Styles */
+body.light-mode .skill-level-card li,
+body.light-mode .platform-card li {
+    color: #495057;
+}
+
+body.light-mode .skill-level-card li::before,
+body.light-mode .platform-card li::before {
+    color: #667eea;
+}
+
+body.light-mode .skill-level-card li a,
+body.light-mode .platform-card li a {
+    color: #495057;
+}
+
+body.light-mode .skill-level-card li a:hover,
+body.light-mode .platform-card li a:hover {
+    color: #667eea;
+} 

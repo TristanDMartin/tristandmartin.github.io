@@ -1,0 +1,183 @@
+/* OBS Setup Page Specific Styles */
+body.obs-setup-page .tool-category {
+    background: rgba(31, 40, 51, 0.5);
+    border-radius: 15px;
+    padding: 2rem;
+    border: 1px solid #45A29E;
+    margin-bottom: 2rem;
+}
+
+body.obs-setup-page .tool-category h2 {
+    color: #66FCF1;
+    margin-bottom: 1.5rem;
+    font-size: 1.8rem;
+    font-weight: 600;
+    text-align: left;
+    padding-bottom: 0;
+}
+
+body.obs-setup-page .tool-category h2::after {
+    display: none;
+}
+
+body.obs-setup-page .tool-category p {
+    color: #C5C6C7;
+    margin-bottom: 1rem;
+    line-height: 1.6;
+}
+
+body.obs-setup-page .tool-category ul {
+    list-style-type: none;
+    padding-left: 1.5rem;
+    margin: 1rem 0;
+}
+
+body.obs-setup-page .tool-category ul li {
+    color: #C5C6C7;
+    margin-bottom: 0.8rem;
+    position: relative;
+    padding-left: 1.5rem;
+}
+
+body.obs-setup-page .tool-category ul li::before {
+    content: '•';
+    color: #66FCF1;
+    position: absolute;
+    left: 0;
+    font-size: 1.2rem;
+}
+
+body.obs-setup-page .tool-card {
+    background: rgba(11, 12, 16, 0.5);
+    border-radius: 10px;
+    padding: 1.5rem;
+    margin-top: 1rem;
+    border: 1px solid rgba(69, 162, 158, 0.3);
+}
+
+/* Download Links Styles */
+body.obs-setup-page .download-links {
+    display: flex;
+    gap: 1rem;
+    margin: 1.5rem 0;
+}
+
+body.obs-setup-page .download-link {
+    display: flex;
+    align-items: center;
+    gap: 0.8rem;
+    padding: 1rem 1.5rem;
+    background: linear-gradient(45deg, #66FCF1, #45A29E);
+    border: none;
+    border-radius: 10px;
+    color: #0B0C10;
+    text-decoration: none;
+    transition: all 0.3s ease;
+    flex: 1;
+    font-weight: 600;
+    cursor: pointer;
+    justify-content: center;
+}
+
+body.obs-setup-page .download-link:hover {
+    transform: translateY(-2px);
+    box-shadow: 0 4px 15px rgba(102, 252, 241, 0.2);
+}
+
+body.obs-setup-page .download-link svg {
+    width: 24px;
+    height: 24px;
+}
+
+body.obs-setup-page .download-link .link-text {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+}
+
+body.obs-setup-page .download-link .link-title {
+    font-weight: 600;
+}
+
+body.obs-setup-page .download-link .link-subtitle {
+    font-size: 0.9rem;
+    opacity: 0.8;
+}
+
+/* Video Grid Styles */
+body.obs-setup-page .video-grid {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 2rem;
+    margin-top: 2rem;
+    width: 100%;
+}
+
+body.obs-setup-page .video-card {
+    background: rgba(31, 40, 51, 0.5);
+    border-radius: 15px;
+    overflow: hidden;
+    transition: transform 0.3s ease;
+    border: 1px solid #45A29E;
+}
+
+body.obs-setup-page .video-card:hover {
+    transform: translateY(-5px);
+}
+
+body.obs-setup-page .video-container {
+    position: relative;
+    padding-bottom: 56.25%; /* 16:9 Aspect Ratio */
+    height: 0;
+    overflow: hidden;
+    background: rgba(11, 12, 16, 0.5);
+}
+
+body.obs-setup-page .video-container iframe {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    border: none;
+}
+
+body.obs-setup-page .video-info {
+    padding: 1.5rem;
+}
+
+body.obs-setup-page .video-info h3 {
+    color: #C5C6C7;
+    font-size: 1.2rem;
+    margin-bottom: 0.5rem;
+}
+
+body.obs-setup-page .video-info p {
+    color: #66FCF1;
+    font-size: 0.9rem;
+}
+
+/* Responsive Video Grid */
+@media (max-width: 1200px) {
+    body.obs-setup-page .video-grid {
+        grid-template-columns: repeat(2, 1fr);
+    }
+}
+
+@media (max-width: 768px) {
+    body.obs-setup-page .video-grid {
+        grid-template-columns: 1fr;
+    }
+}
+
+/* Auth Button Styles */
+body.obs-setup-page .auth-button.login {
+    color: #66FCF1 !important;
+}
+
+body.obs-setup-page .auth-button.login:hover {
+    color: #66FCF1 !important;
+    background: rgba(102, 252, 241, 0.1);
+    border-color: #66FCF1;
+} 

@@ -1,0 +1,350 @@
+/* Creator Tools Page Specific Styles */
+
+/* Hero section styles to match featured-guides.html */
+.hero.index-hero {
+    background: linear-gradient(135deg, #667eea 0%, #764ba2 100%);
+    padding: 9rem 2rem 4rem;
+    text-align: center;
+    position: relative;
+    overflow: hidden;
+    border-bottom: 2px solid #45A29E;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    min-height: 400px;
+    margin-top: 0;
+}
+
+.hero-content.index-hero-content {
+    max-width: 800px;
+    margin: 0 auto;
+    color: #C5C6C7;
+    position: relative;
+    z-index: 1;
+    text-align: center;
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.hero-content.index-hero-content h1 {
+    font-size: 3.5rem;
+    font-weight: 700;
+    margin-bottom: 1.5rem;
+    line-height: 1.2;
+}
+
+.hero-content.index-hero-content .white-text {
+    color: #C5C6C7;
+}
+
+.hero-content.index-hero-content .faster-text {
+    background: linear-gradient(45deg, #66FCF1, #45A29E);
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+    background-clip: text;
+}
+
+.hero-content.index-hero-content p {
+    font-size: 1.2rem;
+    margin-bottom: 2rem;
+    max-width: 600px;
+}
+
+/* Features section styles */
+.features {
+    padding: 4rem 1rem;
+    background: #0B0C10;
+}
+
+.features-content {
+    max-width: 1400px;
+    margin: 0 auto;
+    text-align: center;
+}
+
+.features-content h2 {
+    font-size: 2.5rem;
+    font-weight: 700;
+    margin-bottom: 3rem;
+    color: #C5C6C7;
+}
+
+.features-content h2 span {
+    background: linear-gradient(45deg, #667eea, #764ba2);
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+    background-clip: text;
+}
+
+.guides-container {
+    display: grid;
+    grid-template-columns: 1fr;
+    gap: 3rem;
+    max-width: 1600px;
+    margin: 0 auto;
+    align-items: start;
+    border-radius: 20px;
+    overflow: hidden;
+}
+
+.guide-section {
+    background: rgba(31, 40, 51, 0.95);
+    border-radius: 20px;
+    padding: 2rem;
+    margin-bottom: 2rem;
+    box-shadow: 0 8px 32px rgba(0, 0, 0, 0.2);
+    border: 1px solid;
+    border-image: linear-gradient(45deg, #667eea, #764ba2) 1;
+    backdrop-filter: blur(10px);
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+    width: 100%;
+    max-width: 100%;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+.guide-section:hover {
+    transform: translateY(-5px);
+    box-shadow: 0 12px 40px rgba(0, 0, 0, 0.3);
+}
+
+/* Growth section styles */
+.growth-section {
+    padding: 4rem 1rem;
+    background: linear-gradient(135deg, #1F2833 0%, #0B0C10 100%);
+    border-top: 1px solid;
+    border-image: linear-gradient(45deg, #667eea, #764ba2) 1;
+}
+
+.growth-section h2 {
+    font-size: 2.5rem;
+    font-weight: 700;
+    text-align: center;
+    margin-bottom: 3rem;
+    color: #C5C6C7;
+}
+
+.growth-section .all-gradient {
+    background: linear-gradient(45deg, #667eea, #764ba2);
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+    background-clip: text;
+}
+
+.growth-content {
+    max-width: 1400px;
+    margin: 0 auto;
+    display: grid;
+    grid-template-columns: 1fr;
+    gap: 3rem;
+    align-items: start;
+}
+
+.growth-text {
+    background: rgba(31, 40, 51, 0.95);
+    border-radius: 15px;
+    padding: 2rem;
+    border: 1px solid;
+    border-image: linear-gradient(45deg, #667eea, #764ba2) 1;
+    backdrop-filter: blur(10px);
+    box-shadow: 0 8px 32px rgba(0, 0, 0, 0.2);
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+.growth-text:hover {
+    transform: translateY(-5px);
+    box-shadow: 0 12px 40px rgba(0, 0, 0, 0.3);
+}
+
+.growth-text p {
+    font-size: 1.1rem;
+    line-height: 1.8;
+    color: #C5C6C7;
+    margin-bottom: 2rem;
+    text-align: center;
+    max-width: 800px;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+/* Tool category heading styles */
+.tool-category h2 {
+    font-size: 2rem;
+    font-weight: 700;
+    margin-bottom: 2rem;
+    color: #C5C6C7;
+    text-align: center;
+}
+
+.tool-category h2 span {
+    background: linear-gradient(45deg, #667eea, #764ba2);
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+    background-clip: text;
+}
+
+/* Tool grid styles */
+.tool-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
+    gap: 1.5rem;
+    margin-bottom: 2rem;
+}
+
+.tool-card {
+    background: rgba(31, 40, 51, 0.8);
+    border-radius: 12px;
+    padding: 1.5rem;
+    text-decoration: none;
+    color: #C5C6C7;
+    transition: all 0.3s ease;
+    border: 1px solid transparent;
+    position: relative;
+    overflow: hidden;
+}
+
+.tool-card::before {
+    content: '';
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    border-radius: 12px;
+    padding: 1px;
+    background: linear-gradient(45deg, #667eea, #764ba2);
+    mask: linear-gradient(#fff 0 0) content-box, linear-gradient(#fff 0 0);
+    mask-composite: exclude;
+    -webkit-mask: linear-gradient(#fff 0 0) content-box, linear-gradient(#fff 0 0);
+    -webkit-mask-composite: xor;
+    opacity: 0;
+    transition: opacity 0.3s ease;
+}
+
+.tool-card:hover::before {
+    opacity: 1;
+}
+
+.tool-card:hover {
+    transform: translateY(-3px);
+    box-shadow: 0 8px 25px rgba(102, 126, 234, 0.2);
+    background: rgba(31, 40, 51, 0.95);
+}
+
+.tool-card h3 {
+    font-size: 1.3rem;
+    font-weight: 600;
+    margin-bottom: 0.8rem;
+    color: #66FCF1;
+}
+
+.tool-card p {
+    font-size: 0.95rem;
+    line-height: 1.5;
+    margin-bottom: 1rem;
+    color: #C5C6C7;
+}
+
+.platform-tag {
+    display: inline-block;
+    background: linear-gradient(45deg, #667eea, #764ba2);
+    color: white;
+    padding: 0.3rem 0.8rem;
+    border-radius: 20px;
+    font-size: 0.8rem;
+    font-weight: 500;
+}
+
+/* Learn more button styles */
+.learn-more-container {
+    text-align: center;
+    margin-top: 1rem;
+}
+
+.learn-more-button {
+    background: linear-gradient(45deg, #667eea, #764ba2);
+    color: white;
+    border: none;
+    padding: 0.8rem 2rem;
+    border-radius: 25px;
+    font-weight: 600;
+    cursor: pointer;
+    transition: all 0.3s ease;
+    font-size: 0.95rem;
+}
+
+.learn-more-button:hover {
+    transform: translateY(-2px);
+    box-shadow: 0 5px 15px rgba(102, 126, 234, 0.3);
+}
+
+.additional-tools {
+    margin-top: 2rem;
+}
+
+/* Light Mode Styles */
+body.light-mode .hero.index-hero {
+    background: linear-gradient(135deg, #667eea 0%, #764ba2 100%);
+    color: #ffffff;
+}
+
+body.light-mode .guide-section,
+body.light-mode .growth-text {
+    background: rgba(255, 255, 255, 0.95);
+    border: 1px solid;
+    border-image: linear-gradient(45deg, #667eea, #764ba2) 1;
+    color: #495057;
+}
+
+body.light-mode .growth-text p {
+    color: #6c757d;
+}
+
+body.light-mode .growth-section {
+    background: linear-gradient(135deg, #e9ecef 0%, #f8f9fa 100%);
+}
+
+body.light-mode .tool-card {
+    background: rgba(255, 255, 255, 0.9);
+    color: #495057;
+}
+
+body.light-mode .tool-card:hover {
+    background: rgba(255, 255, 255, 0.95);
+}
+
+body.light-mode .tool-card h3 {
+    color: #667eea;
+}
+
+body.light-mode .tool-card p {
+    color: #6c757d;
+}
+
+/* Responsive Design */
+@media (max-width: 768px) {
+    .hero-content.index-hero-content h1 {
+        font-size: 2.5rem;
+    }
+    
+    .features-content h2,
+    .growth-section h2 {
+        font-size: 2rem;
+    }
+    
+    .guides-container {
+        grid-template-columns: 1fr;
+        gap: 2rem;
+    }
+    
+    .tool-grid {
+        grid-template-columns: 1fr;
+        gap: 1rem;
+    }
+    
+    .tool-category h2 {
+        font-size: 1.5rem;
+    }
+} 

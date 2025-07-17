@@ -1,0 +1,41 @@
+/* Events Page Layout */
+body {
+    display: flex;
+    flex-direction: column;
+    min-height: 100vh;
+    background: #0B0C10;
+}
+
+main {
+    margin-left: 250px;
+    padding-top: 0;
+    flex: 1;
+    position: relative;
+    min-height: calc(100vh - 80px - 200px);
+    background: transparent;
+    transition: margin-left 0.3s ease;
+    width: calc(100% - 250px);
+    display: block;
+    clear: both;
+}
+
+.sidebar.collapsed ~ main {
+    margin-left: 0;
+    width: 100%;
+}
+
+@media (max-width: 768px) {
+    main {
+        margin-left: 0;
+        width: 100%;
+    }
+}
+
+/* Events Container */
+.events-container {
+    max-width: 1600px;
+    margin: 0 auto;
+    padding: 2rem;
+    position: relative;
+    z-index: 1;
+} 

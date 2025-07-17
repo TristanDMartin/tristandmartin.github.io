@@ -1,0 +1,139 @@
+/* Bitrate Optimization Guide Section Styles */
+.bitrate-optimization-page .guide-section {
+    background: rgba(31, 40, 51, 0.95);
+    border-radius: 15px;
+    padding: 2.5rem;
+    margin: 2rem auto;
+    max-width: 1600px;
+    box-shadow: 0 8px 32px rgba(0, 0, 0, 0.2);
+    border: 1px solid rgba(69, 162, 158, 0.2);
+    backdrop-filter: blur(10px);
+}
+
+.bitrate-optimization-page .guide-section p {
+    color: #C5C6C7;
+    font-size: 1.1rem;
+    line-height: 1.8;
+    margin-bottom: 2rem;
+}
+
+.bitrate-optimization-page .guide-section h2 {
+    color: #66FCF1;
+    font-size: 1.8rem;
+    margin: 2.5rem 0 1.5rem;
+    padding-bottom: 0.5rem;
+    border-bottom: 2px solid rgba(69, 162, 158, 0.3);
+    display: flex;
+    align-items: center;
+    gap: 0.8rem;
+}
+
+.bitrate-optimization-page .guide-section h2::before {
+    content: '';
+    display: inline-block;
+    width: 4px;
+    height: 24px;
+    background: linear-gradient(to bottom, #66FCF1, #45A29E);
+    border-radius: 2px;
+}
+
+.bitrate-optimization-page .guide-section ul,
+.bitrate-optimization-page .guide-section ol {
+    margin: 1.5rem 0;
+    padding-left: 1.5rem;
+}
+
+.bitrate-optimization-page .guide-section li {
+    color: #C5C6C7;
+    margin-bottom: 1rem;
+    line-height: 1.6;
+}
+
+.bitrate-optimization-page .guide-section strong {
+    color: #66FCF1;
+    font-weight: 600;
+}
+
+.bitrate-optimization-page .guide-section .bitrate-table {
+    width: 100%;
+    border-collapse: separate;
+    border-spacing: 0;
+    margin: 2rem 0;
+    background: rgba(11, 12, 16, 0.5);
+    border-radius: 10px;
+    overflow: hidden;
+}
+
+.bitrate-optimization-page .guide-section .bitrate-table th {
+    background: rgba(69, 162, 158, 0.2);
+    color: #66FCF1;
+    padding: 1rem;
+    text-align: left;
+    font-weight: 600;
+    border-bottom: 2px solid rgba(69, 162, 158, 0.3);
+}
+
+.bitrate-optimization-page .guide-section .bitrate-table td {
+    padding: 1rem;
+    color: #C5C6C7;
+    border-bottom: 1px solid rgba(69, 162, 158, 0.1);
+}
+
+.bitrate-optimization-page .guide-section .bitrate-table tr:last-child td {
+    border-bottom: none;
+}
+
+.bitrate-optimization-page .guide-section .bitrate-table tr:hover td {
+    background: rgba(69, 162, 158, 0.05);
+}
+
+.bitrate-optimization-page .guide-section .video-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+    gap: 2rem;
+    margin: 2rem 0;
+}
+
+.bitrate-optimization-page .guide-section .video-card {
+    background: rgba(11, 12, 16, 0.5);
+    border-radius: 10px;
+    overflow: hidden;
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+.bitrate-optimization-page .guide-section .video-card:hover {
+    transform: translateY(-5px);
+    box-shadow: 0 8px 24px rgba(102, 252, 241, 0.15);
+}
+
+.bitrate-optimization-page .guide-section .video-container {
+    position: relative;
+    padding-bottom: 56.25%;
+    height: 0;
+    overflow: hidden;
+}
+
+.bitrate-optimization-page .guide-section .video-container iframe {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    border: none;
+}
+
+.bitrate-optimization-page .guide-section .video-info {
+    padding: 1.5rem;
+}
+
+.bitrate-optimization-page .guide-section .video-info h3 {
+    color: #66FCF1;
+    font-size: 1.3rem;
+    margin-bottom: 0.5rem;
+}
+
+.bitrate-optimization-page .guide-section .video-info p {
+    color: #C5C6C7;
+    font-size: 0.95rem;
+    margin: 0;
+} 

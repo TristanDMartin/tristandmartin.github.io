@@ -1,0 +1,1011 @@
+/* Guide Section Styles */
+.guide-section {
+    max-width: 1600px;
+    margin: 0 auto;
+    padding: 2rem;
+    background: rgba(31, 40, 51, 0.95);
+    border-radius: 20px;
+    box-shadow: 0 8px 32px rgba(0, 0, 0, 0.1);
+    border: 1px solid rgba(69, 162, 158, 0.1);
+    backdrop-filter: blur(10px);
+    transition: all 0.4s cubic-bezier(0.4, 0, 0.2, 1);
+}
+
+.guide-section:hover {
+    transform: translateY(-4px);
+    box-shadow: 0 12px 40px rgba(0, 0, 0, 0.3);
+    border-color: rgba(102, 252, 241, 0.2);
+}
+
+.guide-section p {
+    color: #C5C6C7;
+    line-height: 1.8;
+    margin-bottom: 1.5rem;
+    font-size: 17.6px;
+}
+
+.guide-section h2 {
+    color: #66FCF1;
+    font-size: 2.2rem;
+    margin: 2.5rem 0 1.5rem;
+    position: relative;
+    padding-bottom: 0.5rem;
+    text-align: center;
+}
+
+.guide-section h2::after {
+    content: '';
+    position: absolute;
+    bottom: 0;
+    left: 50%;
+    transform: translateX(-50%);
+    width: 60px;
+    height: 3px;
+    background: linear-gradient(90deg, #66FCF1, #45A29E);
+    border-radius: 2px;
+}
+
+.guide-section h3 {
+    color: #C5C6C7;
+    font-size: 1.5rem;
+    margin: 2rem 0 1rem;
+}
+
+.guide-section ul {
+    list-style: none;
+    padding-left: 1.5rem;
+    margin: 1.5rem 0;
+}
+
+.guide-section ul > li {
+    color: #C5C6C7;
+    margin-bottom: 0.8rem;
+    line-height: 1.6;
+    position: relative;
+    padding-left: 1.5rem;
+}
+
+.guide-section ul > li::before {
+    content: '•';
+    color: #66FCF1;
+    font-weight: bold;
+    position: absolute;
+    left: 0;
+}
+
+/* Remove bullets from nested lists */
+.guide-section ul ul {
+    list-style: none;
+    padding-left: 0;
+    margin: 0.5rem 0;
+}
+
+.guide-section ul ul li {
+    padding-left: 0;
+    margin-bottom: 0.5rem;
+}
+
+.guide-section ul ul li::before {
+    display: none;
+}
+
+.guide-section ol {
+    counter-reset: item;
+    list-style-type: none;
+}
+
+.guide-section ol li {
+    counter-increment: item;
+    position: relative;
+    padding-left: 3rem;
+    margin-bottom: 1rem;
+}
+
+.guide-section ol li::before {
+    content: counter(item);
+    color: #66FCF1;
+    position: absolute;
+    left: 0.5rem;
+    font-weight: bold;
+    background: rgba(102, 252, 241, 0.1);
+    padding: 0.2rem 0.6rem;
+    border-radius: 4px;
+    border: 1px solid rgba(102, 252, 241, 0.2);
+}
+
+/* Video Grid Styles */
+.video-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+    gap: 2rem;
+    margin: 2rem 0;
+}
+
+.video-card {
+    background: rgba(31, 40, 51, 0.5);
+    border-radius: 12px;
+    overflow: hidden;
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+    border: 1px solid rgba(69, 162, 158, 0.1);
+}
+
+.video-card:hover {
+    transform: translateY(-5px);
+    box-shadow: 0 10px 20px rgba(0, 0, 0, 0.2);
+}
+
+.video-container {
+    position: relative;
+    padding-bottom: 56.25%; /* 16:9 Aspect Ratio */
+    height: 0;
+    overflow: hidden;
+}
+
+.video-container iframe {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    border: none;
+}
+
+.video-info {
+    padding: 1.5rem;
+}
+
+.video-info h3 {
+    color: #66FCF1;
+    font-size: 1.2rem;
+    margin-bottom: 0.5rem;
+}
+
+.video-info p {
+    color: #C5C6C7;
+    font-size: 0.9rem;
+    margin: 0;
+}
+
+/* Table Styles */
+.guide-container .command-table,
+.guide-container .points-table {
+    width: 100%;
+    border-collapse: separate;
+    border-spacing: 0;
+    margin: 2rem 0;
+    border-radius: 16px;
+    overflow: hidden;
+    border: 1px solid rgba(69, 162, 158, 0.2);
+    background: rgba(11, 12, 16, 0.6);
+    box-shadow: 0 8px 32px rgba(0, 0, 0, 0.1);
+    backdrop-filter: blur(10px);
+}
+
+.guide-container .command-table th,
+.guide-container .command-table td,
+.guide-container .points-table th,
+.guide-container .points-table td {
+    padding: 1.5rem 2rem;
+    text-align: center;
+    border-bottom: 1px solid rgba(69, 162, 158, 0.1);
+    vertical-align: top;
+}
+
+.guide-container .command-table th,
+.guide-container .points-table th {
+    background: linear-gradient(135deg, rgba(102, 252, 241, 0.15), rgba(69, 162, 158, 0.1));
+    color: #66FCF1;
+    font-weight: 700;
+    font-size: 1.2rem;
+    text-transform: uppercase;
+    letter-spacing: 1px;
+    position: relative;
+}
+
+.guide-container .command-table th::after,
+.guide-container .points-table th::after {
+    content: '';
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    height: 2px;
+    background: linear-gradient(90deg, #66FCF1, #45A29E);
+}
+
+.guide-container .command-table td,
+.guide-container .points-table td {
+    color: #C5C6C7;
+    font-size: 1.1rem;
+    line-height: 1.6;
+    background: rgba(31, 40, 51, 0.3);
+}
+
+.guide-container .command-table tr:last-child td,
+.guide-container .points-table tr:last-child td {
+    border-bottom: none;
+}
+
+.guide-container .command-table tr:hover td,
+.guide-container .points-table tr:hover td {
+    background: rgba(102, 252, 241, 0.08);
+    transition: all 0.3s ease;
+    transform: translateX(4px);
+}
+
+.guide-container .command-table tr:hover,
+.guide-container .points-table tr:hover {
+    box-shadow: 0 4px 20px rgba(102, 252, 241, 0.1);
+}
+
+/* Pro Tips Section */
+.guide-section h2 + ul {
+    background: rgba(102, 252, 241, 0.05);
+    border-radius: 12px;
+    padding: 1.5rem;
+    border: 1px solid rgba(102, 252, 241, 0.1);
+    margin: 1.5rem 0;
+    list-style: none;
+}
+
+.guide-section h2 + ul li {
+    margin-bottom: 1rem;
+    padding-left: 2rem;
+    position: relative;
+    color: #C5C6C7;
+    line-height: 1.6;
+}
+
+.guide-section h2 + ul li::before {
+    content: '💡';
+    position: absolute;
+    left: 0;
+    color: #66FCF1;
+    font-size: 1.1rem;
+}
+
+/* Remove bullet points for Pro Tips section */
+.guide-section h2 + ul li::marker {
+    display: none;
+}
+
+/* Final Thoughts Section */
+.guide-section h2:last-of-type + p {
+    background: rgba(102, 252, 241, 0.05);
+    border-radius: 12px;
+    padding: 2rem;
+    border: 1px solid rgba(102, 252, 241, 0.1);
+    font-style: italic;
+    position: relative;
+}
+
+.guide-section h2:last-of-type + p::before {
+    content: '"';
+    position: absolute;
+    top: 0.5rem;
+    left: 1rem;
+    font-size: 4rem;
+    color: rgba(102, 252, 241, 0.1);
+    font-family: serif;
+}
+
+/* Requirements Section */
+.requirements-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+    gap: 2rem;
+    margin: 2rem 0;
+}
+
+.requirement-card {
+    background: rgba(31, 40, 51, 0.5);
+    border: 1px solid #45A29E;
+    border-radius: 12px;
+    padding: 1.5rem;
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+.requirement-card:hover {
+    transform: translateY(-5px);
+    box-shadow: 0 10px 20px rgba(69, 162, 158, 0.1);
+}
+
+.requirement-card h4 {
+    color: #66FCF1;
+    font-size: 1.3rem;
+    margin-bottom: 1rem;
+}
+
+.requirement-card ul {
+    list-style: none;
+    padding: 0;
+}
+
+.requirement-card li {
+    margin: 0.8rem 0;
+    padding-left: 1.5rem;
+    position: relative;
+}
+
+.requirement-card li::before {
+    content: '→';
+    position: absolute;
+    left: 0;
+    color: #45A29E;
+}
+
+/* Setup Instructions */
+.setup-steps {
+    counter-reset: step;
+    margin: 2rem 0;
+}
+
+.setup-step {
+    background: rgba(31, 40, 51, 0.5);
+    border: 1px solid #45A29E;
+    border-radius: 12px;
+    padding: 1.5rem;
+    margin-bottom: 1.5rem;
+    position: relative;
+    transition: transform 0.3s ease;
+}
+
+.setup-step:hover {
+    transform: translateX(10px);
+}
+
+.setup-step strong {
+    display: block;
+    color: #66FCF1;
+    font-size: 1.2rem;
+    margin-bottom: 1rem;
+}
+
+.setup-step ul {
+    list-style: none;
+    padding-left: 1.5rem;
+}
+
+.setup-step li {
+    margin: 0.8rem 0;
+    position: relative;
+}
+
+.setup-step li::before {
+    content: '•';
+    color: #45A29E;
+    position: absolute;
+    left: -1.5rem;
+}
+
+/* Resources Section */
+.resources-list {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+    gap: 1.5rem;
+    margin: 2rem 0;
+}
+
+.resource-link {
+    display: flex;
+    align-items: center;
+    padding: 1rem;
+    background: rgba(31, 40, 51, 0.5);
+    border: 1px solid #45A29E;
+    border-radius: 8px;
+    color: #66FCF1;
+    text-decoration: none;
+    transition: all 0.3s ease;
+}
+
+.resource-link:hover {
+    background: rgba(102, 252, 241, 0.1);
+    transform: translateX(5px);
+}
+
+/* Content Container */
+.content-section {
+    width: 100%;
+    max-width: 1800px;
+    margin: 0 auto;
+    padding: 2rem;
+    position: relative;
+}
+
+/* Responsive Design */
+@media (max-width: 1700px) {
+    .guide-section {
+        width: calc(100% - 4rem);
+        margin: 0 2rem;
+    }
+    
+    .content-section {
+        padding: 1rem;
+    }
+}
+
+@media (max-width: 768px) {
+    .guide-section {
+        padding: 1.5rem;
+    }
+
+    .guide-section h2 {
+        font-size: 1.8rem;
+    }
+
+    .guide-section h3 {
+        font-size: 1.3rem;
+    }
+
+    .guide-section p {
+        font-size: 1rem;
+    }
+
+    .video-grid {
+        grid-template-columns: 1fr;
+    }
+
+    .comparison-table {
+        display: block;
+        overflow-x: auto;
+    }
+
+    .requirements-grid,
+    .resources-list {
+        grid-template-columns: 1fr;
+    }
+}
+
+/* Animation for content appearance */
+.guide-section {
+    animation: fadeIn 0.5s ease-out;
+}
+
+@keyframes fadeIn {
+    from {
+        opacity: 0;
+        transform: translateY(20px);
+    }
+    to {
+        opacity: 1;
+        transform: translateY(0);
+    }
+}
+
+/* Equipment Grid */
+.equipment-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+    gap: 2rem;
+    margin-top: 2rem;
+}
+
+.equipment-card {
+    background: rgba(45, 55, 72, 0.5);
+    border-radius: 16px;
+    padding: 2rem;
+    border: 1px solid rgba(102, 252, 241, 0.1);
+    transition: all 0.4s ease;
+}
+
+.equipment-card:hover {
+    transform: translateY(-4px);
+    border-color: rgba(102, 252, 241, 0.3);
+    box-shadow: 0 8px 24px rgba(0, 0, 0, 0.2);
+}
+
+.equipment-icon {
+    color: #66FCF1;
+    margin-bottom: 1rem;
+}
+
+.equipment-card h3 {
+    color: #C5C6C7;
+    font-size: 1.5rem;
+    margin-bottom: 1rem;
+}
+
+.equipment-card p {
+    color: #e0e0e0;
+    margin-bottom: 1.5rem;
+}
+
+/* Tip Cards */
+.tip-card {
+    background: rgba(102, 252, 241, 0.05);
+    border-left: 3px solid #66FCF1;
+    padding: 1.5rem;
+    border-radius: 0 12px 12px 0;
+}
+
+.tip-tag {
+    display: inline-block;
+    background: linear-gradient(45deg, #66FCF1, #45A29E);
+    color: #0B0C10;
+    padding: 0.4rem 1rem;
+    border-radius: 6px;
+    font-size: 0.9rem;
+    font-weight: 600;
+    margin-bottom: 0.75rem;
+}
+
+/* Steps Container */
+.steps-container {
+    display: grid;
+    gap: 2rem;
+    margin-top: 2rem;
+}
+
+.step-item {
+    display: flex;
+    gap: 2rem;
+    align-items: flex-start;
+}
+
+.step-number {
+    background: linear-gradient(45deg, #66FCF1, #45A29E);
+    color: #0B0C10;
+    width: 40px;
+    height: 40px;
+    border-radius: 50%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-weight: bold;
+    font-size: 1.2rem;
+    flex-shrink: 0;
+}
+
+.step-content h3 {
+    color: #C5C6C7;
+    font-size: 1.5rem;
+    margin-bottom: 1rem;
+}
+
+.step-content p {
+    color: #e0e0e0;
+    margin-bottom: 1rem;
+}
+
+.step-content ul {
+    list-style: none;
+    padding: 0;
+}
+
+.step-content ul li {
+    color: #e0e0e0;
+    margin-bottom: 0.5rem;
+    padding-left: 1.5rem;
+    position: relative;
+}
+
+.step-content ul li::before {
+    content: "→";
+    color: #66FCF1;
+    position: absolute;
+    left: 0;
+}
+
+/* Tips Grid */
+.tips-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+    gap: 2rem;
+    margin-top: 2rem;
+}
+
+.tip-item {
+    background: rgba(45, 55, 72, 0.5);
+    border-radius: 16px;
+    padding: 2rem;
+    border: 1px solid rgba(102, 252, 241, 0.1);
+    transition: all 0.4s ease;
+}
+
+.tip-item:hover {
+    transform: translateY(-4px);
+    border-color: rgba(102, 252, 241, 0.3);
+    box-shadow: 0 8px 24px rgba(0, 0, 0, 0.2);
+}
+
+.tip-item h3 {
+    color: #C5C6C7;
+    font-size: 1.3rem;
+    margin-bottom: 1rem;
+}
+
+.tip-item p {
+    color: #e0e0e0;
+}
+
+/* Enhanced Video Container */
+.video-container {
+    position: relative;
+    width: 100%;
+    height: 0;
+    padding-bottom: 56.25%; /* 16:9 aspect ratio */
+    margin-top: 2rem;
+}
+
+.video-container iframe {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    border-radius: 12px;
+}
+
+/* Content Section Styles */
+.content-section {
+    padding: 4rem 2rem;
+    max-width: 1600px;
+    margin: 0 auto;
+}
+
+/* Responsive Adjustments */
+@media (max-width: 768px) {
+    .content-section {
+        padding: 2rem 1rem;
+    }
+
+    .guide-section {
+        padding: 2rem;
+    }
+
+    .step-item {
+        flex-direction: column;
+        gap: 1rem;
+    }
+
+    .step-number {
+        margin-bottom: 1rem;
+    }
+
+    .equipment-grid {
+        grid-template-columns: 1fr;
+    }
+
+    .tips-grid {
+        grid-template-columns: 1fr;
+    }
+}
+
+/* Guide Container Styles */
+.guide-container {
+    width: 1600px;
+    margin: 2rem auto;
+    padding: 2rem;
+    background: rgba(31, 40, 51, 0.95);
+    border-radius: 20px;
+    box-shadow: 0 8px 32px rgba(0, 0, 0, 0.1);
+    border: 1px solid rgba(69, 162, 158, 0.1);
+    backdrop-filter: blur(10px);
+    transition: all 0.4s cubic-bezier(0.4, 0, 0.2, 1);
+    position: relative;
+    z-index: 10;
+}
+
+.guide-container:hover {
+    transform: translateY(-4px);
+    box-shadow: 0 12px 40px rgba(0, 0, 0, 0.3);
+    border-color: rgba(102, 252, 241, 0.2);
+}
+
+/* Section Styles */
+.guide-container .section {
+    margin-bottom: 3rem;
+    padding: 2rem;
+    background: rgba(11, 12, 16, 0.3);
+    border-radius: 15px;
+    border: 1px solid rgba(69, 162, 158, 0.1);
+    transition: all 0.3s ease;
+    position: relative;
+    overflow: hidden;
+}
+
+.guide-container .section::before {
+    content: '';
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    height: 3px;
+    background: linear-gradient(90deg, #66FCF1, #45A29E);
+    opacity: 0;
+    transition: opacity 0.3s ease;
+}
+
+.guide-container .section:hover {
+    transform: translateY(-2px);
+    box-shadow: 0 8px 25px rgba(0, 0, 0, 0.2);
+    border-color: rgba(102, 252, 241, 0.2);
+}
+
+.guide-container .section:hover::before {
+    opacity: 1;
+}
+
+.guide-container .section:last-child {
+    margin-bottom: 0;
+}
+
+/* Typography */
+.guide-container h2 {
+    color: #66FCF1;
+    font-size: 2.2rem;
+    margin: 0 0 1.5rem 0;
+    position: relative;
+    padding-bottom: 0.5rem;
+    text-align: center;
+    font-weight: 700;
+}
+
+.guide-container h2::after {
+    content: '';
+    position: absolute;
+    bottom: 0;
+    left: 50%;
+    transform: translateX(-50%);
+    width: 60px;
+    height: 3px;
+    background: linear-gradient(90deg, #66FCF1, #45A29E);
+    border-radius: 2px;
+}
+
+.guide-container p {
+    color: #C5C6C7;
+    line-height: 1.8;
+    margin-bottom: 1.5rem;
+    font-size: 1.1rem;
+    text-align: justify;
+}
+
+/* List Styles */
+.guide-container ol {
+    counter-reset: item;
+    list-style-type: none;
+    padding-left: 0;
+}
+
+.guide-container ol li {
+    counter-increment: item;
+    position: relative;
+    padding-left: 3.5rem;
+    margin-bottom: 1.2rem;
+    color: #C5C6C7;
+    line-height: 1.6;
+    font-size: 1.1rem;
+}
+
+.guide-container ol li::before {
+    content: counter(item);
+    color: #66FCF1;
+    position: absolute;
+    left: 0;
+    top: 0;
+    font-weight: bold;
+    background: rgba(102, 252, 241, 0.1);
+    padding: 0.3rem 0.8rem;
+    border-radius: 6px;
+    border: 1px solid rgba(102, 252, 241, 0.2);
+    min-width: 2rem;
+    text-align: center;
+}
+
+.guide-container ul {
+    list-style: none;
+    padding-left: 0;
+    margin: 1.5rem 0;
+}
+
+.guide-container ul > li {
+    color: #C5C6C7;
+    margin-bottom: 1rem;
+    line-height: 1.6;
+    position: relative;
+    padding-left: 2rem;
+    font-size: 1.1rem;
+}
+
+.guide-container ul > li::before {
+    content: '▶';
+    color: #66FCF1;
+    font-weight: bold;
+    position: absolute;
+    left: 0;
+    top: 0.1rem;
+    font-size: 0.8rem;
+}
+
+/* Code Block Styles */
+.guide-container .code-block {
+    background: rgba(11, 12, 16, 0.8);
+    border: 1px solid rgba(102, 252, 241, 0.2);
+    border-radius: 8px;
+    padding: 1.5rem;
+    margin: 1.5rem 0;
+    font-family: 'Courier New', monospace;
+    color: #C5C6C7;
+    line-height: 1.6;
+    position: relative;
+    overflow-x: auto;
+}
+
+.guide-container .code-block::before {
+    content: 'Code';
+    position: absolute;
+    top: -10px;
+    left: 20px;
+    background: rgba(102, 252, 241, 0.1);
+    color: #66FCF1;
+    padding: 0.2rem 0.8rem;
+    border-radius: 4px;
+    font-size: 0.8rem;
+    font-weight: 600;
+    border: 1px solid rgba(102, 252, 241, 0.2);
+}
+
+/* Video Wrapper Styles */
+.guide-container .video-wrapper {
+    position: relative;
+    width: 100%;
+    padding-bottom: 56.25%; /* 16:9 Aspect Ratio */
+    margin: 2rem 0;
+    border-radius: 12px;
+    overflow: hidden;
+    border: 1px solid rgba(69, 162, 158, 0.1);
+}
+
+.guide-container .video-wrapper iframe {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    border: none;
+}
+
+/* Tip Box Styles */
+.guide-container .tip-box {
+    background: rgba(102, 252, 241, 0.05);
+    border: 1px solid rgba(102, 252, 241, 0.2);
+    border-radius: 12px;
+    padding: 1.5rem;
+    margin: 1.5rem 0;
+    position: relative;
+}
+
+.guide-container .tip-box::before {
+    content: '💡';
+    position: absolute;
+    top: -15px;
+    left: 20px;
+    background: rgba(11, 12, 16, 0.9);
+    padding: 0.3rem 0.8rem;
+    border-radius: 6px;
+    font-size: 1.2rem;
+    border: 1px solid rgba(102, 252, 241, 0.2);
+}
+
+.guide-container .tip-box ul {
+    margin: 0;
+    padding-left: 0;
+}
+
+.guide-container .tip-box li {
+    color: #C5C6C7;
+    margin-bottom: 0.8rem;
+    line-height: 1.6;
+    position: relative;
+    padding-left: 1.5rem;
+    font-size: 1rem;
+}
+
+.guide-container .tip-box li::before {
+    content: '•';
+    color: #66FCF1;
+    font-weight: bold;
+    position: absolute;
+    left: 0;
+}
+
+/* Responsive Design */
+@media (max-width: 768px) {
+    .guide-container {
+        margin: 0 1rem;
+        padding: 1.5rem;
+    }
+    
+    .guide-container .section {
+        padding: 1.5rem;
+        margin-bottom: 2rem;
+    }
+    
+    .guide-container h2 {
+        font-size: 1.8rem;
+        text-align: left;
+    }
+    
+    .guide-container h2::after {
+        left: 0;
+        transform: none;
+    }
+    
+    .guide-container p {
+        font-size: 1rem;
+        text-align: left;
+    }
+    
+    .guide-container .command-table,
+    .guide-container .points-table {
+        font-size: 0.9rem;
+    }
+    
+    .guide-container .command-table th,
+    .guide-container .command-table td,
+    .guide-container .points-table th,
+    .guide-container .points-table td {
+        padding: 0.8rem 1rem;
+    }
+    
+    .guide-container ol li {
+        padding-left: 3rem;
+        font-size: 1rem;
+    }
+    
+    .guide-container ul > li {
+        padding-left: 1.5rem;
+        font-size: 1rem;
+    }
+}
+
+@media (max-width: 480px) {
+    .guide-container {
+        margin: 0 0.5rem;
+        padding: 1rem;
+    }
+    
+    .guide-container .section {
+        padding: 1rem;
+    }
+    
+    .guide-container h2 {
+        font-size: 1.5rem;
+    }
+    
+    .guide-container .command-table,
+    .guide-container .points-table {
+        font-size: 0.8rem;
+    }
+    
+    .guide-container .command-table th,
+    .guide-container .command-table td,
+    .guide-container .points-table th,
+    .guide-container .points-table td {
+        padding: 0.6rem 0.8rem;
+    }
+}
+
+/* Animation for sections */
+.guide-container .section {
+    animation: fadeInUp 0.6s ease-out;
+}
+
+.guide-container .section:nth-child(1) { animation-delay: 0.1s; }
+.guide-container .section:nth-child(2) { animation-delay: 0.2s; }
+.guide-container .section:nth-child(3) { animation-delay: 0.3s; }
+.guide-container .section:nth-child(4) { animation-delay: 0.4s; }
+.guide-container .section:nth-child(5) { animation-delay: 0.5s; }
+.guide-container .section:nth-child(6) { animation-delay: 0.6s; }
+
+@keyframes fadeInUp {
+    from {
+        opacity: 0;
+        transform: translateY(30px);
+    }
+    to {
+        opacity: 1;
+        transform: translateY(0);
+    }
+} 

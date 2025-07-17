@@ -1,0 +1,136 @@
+/* Webcam Setup Page Specific Styles */
+.guide-section {
+    background: rgba(31, 40, 51, 0.85);
+    border: 1.5px solid #45A29E;
+    border-radius: 18px;
+    box-shadow: 0 6px 32px rgba(69, 162, 158, 0.08), 0 1.5px 6px rgba(0,0,0,0.10);
+    padding: 2.5rem 2rem 2rem 2rem;
+    margin: 2rem 0;
+    max-width: 1600px;
+    margin-left: auto;
+    margin-right: auto;
+    position: relative;
+    overflow: hidden;
+}
+
+.guide-section h2 {
+    color: #66FCF1;
+    font-size: 1.6rem;
+    margin-top: 2.5rem;
+    margin-bottom: 1rem;
+    font-weight: 700;
+    letter-spacing: 0.01em;
+    border-left: 4px solid #45A29E;
+    padding-left: 0.75rem;
+    background: linear-gradient(90deg, rgba(102,252,241,0.08) 0%, rgba(69,162,158,0.04) 100%);
+    border-radius: 4px;
+}
+
+.guide-section h2:first-child {
+    margin-top: 0;
+}
+
+.guide-section p {
+    color: #C5C6C7;
+    margin-bottom: 1.2rem;
+    line-height: 1.7;
+    font-size: 1.08rem;
+}
+
+.guide-section ul {
+    list-style: none;
+    margin-bottom: 2rem;
+    padding-left: 0;
+}
+
+.guide-section ul li {
+    color: #C5C6C7;
+    margin-bottom: 0.8rem;
+    padding-left: 1.7rem;
+    position: relative;
+    font-size: 1.05rem;
+}
+
+.guide-section ul li::before {
+    content: '•';
+    color: #66FCF1;
+    position: absolute;
+    left: 0;
+    font-size: 1.2rem;
+    top: 0.1em;
+}
+
+.video-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(320px, 1fr));
+    gap: 2rem;
+    margin-top: 2.5rem;
+}
+
+.video-card {
+    background: rgba(31, 40, 51, 0.7);
+    border-radius: 12px;
+    overflow: hidden;
+    border: 1.5px solid #45A29E;
+    box-shadow: 0 4px 18px rgba(69, 162, 158, 0.10);
+    transition: transform 0.2s, box-shadow 0.2s;
+    display: flex;
+    flex-direction: column;
+}
+
+.video-card:hover {
+    transform: translateY(-6px) scale(1.025);
+    box-shadow: 0 8px 32px rgba(102,252,241,0.13);
+    border-color: #66FCF1;
+}
+
+.video-container {
+    position: relative;
+    padding-bottom: 56.25%;
+    height: 0;
+    overflow: hidden;
+}
+
+.video-container iframe {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    border: none;
+    border-radius: 0 0 8px 8px;
+}
+
+.video-info {
+    padding: 1.2rem 1.2rem 1.5rem 1.2rem;
+    flex: 1;
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-start;
+}
+
+.video-info h3 {
+    color: #66FCF1;
+    margin-bottom: 0.5rem;
+    font-size: 1.15rem;
+    font-weight: 700;
+}
+
+.video-info p {
+    color: #C5C6C7;
+    font-size: 0.98rem;
+    margin: 0;
+    opacity: 0.85;
+}
+
+/* Streaming checklist button styles moved to checklist.css for consistency */
+
+@media (max-width: 700px) {
+    .guide-section {
+        padding: 1.2rem 0.5rem;
+    }
+    .video-grid {
+        grid-template-columns: 1fr;
+        gap: 1.2rem;
+    }
+} 

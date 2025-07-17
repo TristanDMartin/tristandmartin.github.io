@@ -1,0 +1,374 @@
+/* Modal Styles */
+.modal-overlay {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background: rgba(23, 17, 47, 0.8);
+    backdrop-filter: blur(8px);
+    display: none;
+    justify-content: center;
+    align-items: center;
+    z-index: 2000;
+    opacity: 0;
+    transition: opacity 0.3s ease;
+}
+
+/* Fallback for browsers that don't support backdrop-filter */
+@supports not (backdrop-filter: blur(12px)) {
+    .modal-overlay {
+        background: rgba(23, 17, 47, 0.95);
+    }
+}
+
+/* Light mode modal overlay */
+body.light-mode .modal-overlay {
+    background: rgba(255, 255, 255, 0.8);
+}
+
+body.light-mode .modal-overlay {
+    background: rgba(255, 255, 255, 0.95);
+}
+
+/* Hide logout button by default */
+.settings-item.logout {
+    display: none;
+}
+
+.modal-overlay.active {
+    display: flex;
+    opacity: 1;
+}
+
+.modal {
+    background: rgba(23, 17, 47, 0.95);
+    border-radius: 15px;
+    width: 100%;
+    max-width: 400px;
+    padding: 2rem;
+    position: relative;
+    border: 1px solid transparent;
+    box-shadow: 0 10px 30px rgba(0, 0, 0, 0.3);
+    transform: translateY(20px);
+    transition: transform 0.3s ease;
+}
+
+/* Modal gradient border */
+.modal::before {
+    content: '';
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    border-radius: 15px;
+    padding: 1px;
+    background: linear-gradient(90deg, #9a5ee2 0%, #7768df 25%, #1670de 50%, #3c8bd6 75%, #4897d2 100%);
+    background-size: 200% 200%;
+    animation: gradient 3s ease infinite;
+    mask: linear-gradient(#fff 0 0) content-box, linear-gradient(#fff 0 0);
+    mask-composite: exclude;
+    -webkit-mask: linear-gradient(#fff 0 0) content-box, linear-gradient(#fff 0 0);
+    -webkit-mask-composite: xor;
+    z-index: -1;
+}
+
+/* Light mode modal */
+body.light-mode .modal {
+    background: rgba(255, 255, 255, 0.95);
+    box-shadow: 0 10px 30px rgba(0, 0, 0, 0.1);
+}
+
+.modal-overlay.active .modal {
+    transform: translateY(0);
+}
+
+.modal-close {
+    position: absolute;
+    top: 1rem;
+    right: 1rem;
+    background: none;
+    border: none;
+    color: #C5C6C7;
+    cursor: pointer;
+    padding: 0.5rem;
+    transition: all 0.3s ease;
+}
+
+body.light-mode .modal-close {
+    color: #333;
+}
+
+.modal-close:hover {
+    background: linear-gradient(90deg, #9a5ee2 0%, #7768df 25%, #1670de 50%, #3c8bd6 75%, #4897d2 100%);
+    background-size: 200% 200%;
+    animation: gradient 3s ease infinite;
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+    transform: rotate(90deg);
+}
+
+.modal h2 {
+    color: #C5C6C7;
+    font-size: 2rem;
+    margin-bottom: 1.5rem;
+    text-align: center;
+}
+
+body.light-mode .modal h2 {
+    color: #333;
+}
+
+.modal h2 span {
+    background: linear-gradient(90deg, #9a5ee2 0%, #7768df 25%, #1670de 50%, #3c8bd6 75%, #4897d2 100%);
+    background-size: 200% 200%;
+    animation: gradient 3s ease infinite;
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+}
+
+.modal .form-group {
+    margin-bottom: 1.5rem;
+}
+
+.modal .form-group label {
+    display: block;
+    color: #C5C6C7;
+    margin-bottom: 0.5rem;
+    font-weight: 500;
+}
+
+body.light-mode .modal .form-group label {
+    color: #333;
+}
+
+.modal .form-group {
+    position: relative;
+    margin-bottom: 1.5rem;
+}
+
+.modal .form-group input {
+    width: 100%;
+    padding: 0.8rem 1rem;
+    border-radius: 8px;
+    border: 2px solid transparent;
+    background: rgba(23, 17, 47, 0.9);
+    color: #C5C6C7;
+    font-size: 1rem;
+    transition: all 0.3s ease;
+    position: relative;
+    z-index: 1;
+}
+
+/* Input gradient border */
+.modal .form-group::before {
+    content: '';
+    position: absolute;
+    top: -2px;
+    left: -2px;
+    right: -2px;
+    bottom: -2px;
+    border-radius: 10px;
+    background: linear-gradient(90deg, #9a5ee2 0%, #7768df 25%, #1670de 50%, #3c8bd6 75%, #4897d2 100%);
+    background-size: 200% 200%;
+    animation: gradient 3s ease infinite;
+    z-index: 0;
+    opacity: 0.8;
+}
+
+body.light-mode .modal .form-group input {
+    background: rgba(255, 255, 255, 0.95);
+    color: #333;
+    border: 2px solid transparent;
+}
+
+.modal .form-group input:focus {
+    outline: none;
+    border-color: transparent;
+    box-shadow: 0 0 0 3px rgba(154, 94, 226, 0.4);
+    background: rgba(23, 17, 47, 0.8);
+    transform: translateY(-1px);
+}
+
+body.light-mode .modal .form-group input:focus {
+    background: rgba(255, 255, 255, 0.95);
+    box-shadow: 0 0 0 3px rgba(154, 94, 226, 0.4);
+    transform: translateY(-1px);
+}
+
+.modal .form-group input::placeholder {
+    color: rgba(197, 198, 199, 0.5);
+}
+
+body.light-mode .modal .form-group input::placeholder {
+    color: rgba(51, 51, 51, 0.5);
+}
+
+.modal .submit-btn {
+    width: 100%;
+    padding: 1rem;
+    border: none;
+    border-radius: 8px;
+    background: linear-gradient(90deg, #9a5ee2 0%, #7768df 25%, #1670de 50%, #3c8bd6 75%, #4897d2 100%);
+    background-size: 200% 200%;
+    animation: gradient 3s ease infinite;
+    color: #ffffff;
+    font-size: 1.1rem;
+    font-weight: 600;
+    cursor: pointer;
+    transition: all 0.3s ease;
+    margin-top: 1rem;
+    position: relative;
+    overflow: hidden;
+}
+
+.modal .submit-btn::before {
+    content: '';
+    position: absolute;
+    top: 0;
+    left: -100%;
+    width: 100%;
+    height: 100%;
+    background: linear-gradient(90deg, transparent, rgba(255, 255, 255, 0.2), transparent);
+    transition: left 0.5s ease;
+}
+
+.modal .submit-btn:hover::before {
+    left: 100%;
+}
+
+.modal .submit-btn:hover {
+    transform: translateY(-2px);
+    box-shadow: 0 5px 15px rgba(154, 94, 226, 0.3);
+}
+
+.modal .switch-form {
+    text-align: center;
+    margin-top: 1.5rem;
+    color: #C5C6C7;
+}
+
+body.light-mode .modal .switch-form {
+    color: #333;
+}
+
+.modal .switch-form a {
+    background: linear-gradient(90deg, #9a5ee2 0%, #7768df 25%, #1670de 50%, #3c8bd6 75%, #4897d2 100%);
+    background-size: 200% 200%;
+    animation: gradient 3s ease infinite;
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+    text-decoration: none;
+    font-weight: 500;
+    transition: all 0.3s ease;
+}
+
+.modal .switch-form a:hover {
+    text-decoration: underline;
+    transform: translateY(-1px);
+}
+
+.modal .social-auth {
+    margin-top: 2rem;
+    text-align: center;
+}
+
+.modal .social-auth p {
+    color: #C5C6C7;
+    margin-bottom: 1rem;
+    position: relative;
+}
+
+body.light-mode .modal .social-auth p {
+    color: #333;
+}
+
+.modal .social-auth p::before,
+.modal .social-auth p::after {
+    content: '';
+    position: absolute;
+    top: 50%;
+    width: 30%;
+    height: 1px;
+    background: linear-gradient(90deg, #9a5ee2 0%, #7768df 25%, #1670de 50%, #3c8bd6 75%, #4897d2 100%);
+    background-size: 200% 200%;
+    animation: gradient 3s ease infinite;
+}
+
+.modal .social-auth p::before {
+    left: 0;
+}
+
+.modal .social-auth p::after {
+    right: 0;
+}
+
+.modal .social-buttons {
+    display: flex;
+    gap: 1rem;
+    justify-content: center;
+}
+
+.modal .social-btn {
+    padding: 0.8rem 1.5rem;
+    border: 1px solid transparent;
+    border-radius: 8px;
+    background: transparent;
+    color: #C5C6C7;
+    cursor: pointer;
+    transition: all 0.3s ease;
+    display: flex;
+    align-items: center;
+    gap: 0.5rem;
+    position: relative;
+    overflow: hidden;
+}
+
+/* Social button styling */
+.modal .social-btn {
+    position: relative;
+    z-index: 1;
+    border: 1px solid #dadce0;
+    background: #ffffff;
+    color: #3c4043;
+    font-weight: 500;
+    box-shadow: 0 1px 3px rgba(0, 0, 0, 0.08);
+    transition: all 0.3s ease;
+}
+
+.modal .social-btn:hover {
+    background: #f8f9fa;
+    box-shadow: 0 2px 6px rgba(0, 0, 0, 0.12);
+    transform: translateY(-1px);
+}
+
+body.light-mode .modal .social-btn {
+    border: 1px solid #dadce0;
+    background: #ffffff;
+    color: #3c4043;
+}
+
+body.light-mode .modal .social-btn:hover {
+    background: #f8f9fa;
+    box-shadow: 0 2px 6px rgba(0, 0, 0, 0.12);
+}
+
+body.light-mode .modal .social-btn {
+    color: #333;
+}
+
+
+
+/* Header Glass Effect */
+header {
+    background: #17112f;
+    backdrop-filter: blur(10px);
+    -webkit-backdrop-filter: blur(10px);
+    border-bottom: 1px solid rgba(154, 94, 226, 0.2);
+}
+
+body.light-mode header {
+    background: #ffffff;
+    border-bottom: 1px solid #e1e8ed;
+}
